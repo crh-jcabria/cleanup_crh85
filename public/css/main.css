@@ -16,6 +16,29 @@ body {
   color: #444444;
 }
 
+.back-to-top {
+  position: relative;
+  text-align: center;
+}
+
+#backToTop {
+  background-color: #444444;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#backToTop img {
+  margin: 12px auto;
+}
+
 .divider-img {
   margin: 30px 15px;
 }
@@ -417,5 +440,135 @@ header {
 
 .video-ftr-bg {
   background-image: url(../media/images/top/video-bg.png);
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ftr-kitchentrip-logo {
+  margin: 30px;
+  text-align: center;
+  font-family: "Courgette", Arial, Helvetica, sans-serif;
+}
+
+.ftr-brand-name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.ftr-brand-name .ftr-brand-logo {
+  height: 65px;
+  width: 65px;
+  margin-right: 22px;
+}
+
+.ftr-brand-name .ftr-brand-name {
+  font-size: 34px;
+  color: #B94049;
+}
+
+.ftr-cleanup-logo {
+  margin: 20px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ftr-cleanup-logo span {
+  font-size: 12px;
+}
+
+.ftr-cleanup-logo img {
+  width: 142px;
+  height: 56px;
+  margin: 16px auto;
+}
+
+.ftr-terms-privacy {
+  margin: 60px auto 40px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.ftr-terms-privacy a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+.ftr-terms-privacy div {
+  text-align: center;
+}
+
+.ftr-terms-privacy .terms-wrapper {
+  border-right: 1px solid #ccc;
+}
+
+.ftr-social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  background-image: url(../media/images/footer-bg-bottom.png);
+  background-repeat: no-repeat;
+  background-size: 322% 66%;
+  background-position: 3.3% 100%;
+}
+
+.ftr-social-links .ftr-social {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  margin: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ftr-social-links .ftr-social-link {
+  padding-top: 6px;
+}
+
+.ftr-copyright {
+  background-color: #aaa;
+  height: 40px;
+  padding-top: 14px;
+  color: white;
+  text-align: center;
+}
+
+.ftr-copyright p {
+  font-size: 10px;
 }
 /*# sourceMappingURL=main.css.map */

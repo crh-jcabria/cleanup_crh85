@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+    font-family: 'hiragino';
+    src: url(../font/hiragino-kaku-gothic-pro-w3.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+$primary-color: #444444;
+$brand-color: #B94049;
+$brand-font: 'Courgette', Arial, Helvetica, sans-serif;
+$hiragino-font: 'hiragino', Arial, Helvetica, sans-serif;
+
+$colors: (
+    post: #8B7FA3,
+    event: #B99172,
+    kitchen : #73A8AC,
+    care : #C08282,
+    storage : #B8A84D,
+    movie : #7FAA70
+);
+
+@function get-color($category) {
+    @return map-get($colors, $category);
+}
+
+body {
+    font-family: $hiragino-font;
+    color: $primary-color;
+}
+
+
+@mixin transition {
+    transition: all 0.5s ease;
+}
+
+@mixin transition-2 {
+    transition: all 0.3s ease;
+}
+
+.divider-img {
+    margin: 30px 15px;
+}

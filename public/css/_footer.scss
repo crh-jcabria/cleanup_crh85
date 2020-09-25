@@ -1,0 +1,61 @@
+.footer {
+    background-image: url(../media/images/footer-bg.png);
+}
+
+.footer-nav-links {
+    padding: 52px 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.footer-nav-item {
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 160px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+}
+
+.post-ftr-bg {
+    background-image: url(../media/images/top/post-bg.png);
+}
+
+.event-ftr-bg {
+    background-image: url(../media/images/top/event-bg.png);
+}
+
+.cooking-ftr-bg {
+    background-image: url(../media/images/top/cooking-bg.png);
+}
+
+.care-ftr-bg {
+    background-image: url(../media/images/top/care-bg.png);
+}
+
+.storage-ftr-bg {
+    background-image: url(../media/images/top/storage-bg.png);
+}
+
+.video-ftr-bg {
+    background-image: url(../media/images/top/video-bg.png);
+}
+
+

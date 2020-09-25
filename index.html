@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitchen Trip</title>
     <link rel="icon" href="./public/media/icons/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/css/main.css">
-
+    
     <script>
         (function(d) {
           var config = {
@@ -107,9 +108,28 @@
     </nav>
 
     <section class="carousel">
-       <div class="dummy-hero-image">
+       <!-- <div class="dummy-hero-image">
             <img src="./public/media/images/carousel/sp/slide-1.png" alt="Dummy Carousel Image">
-       </div>
+       </div> -->
+
+       <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+                <img src="./public/media/icons/next-arrow.png" alt="Next slide">
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./public/media/icons/prev-arrow.png" alt="Previous slide">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
     <section class="contents">
@@ -256,10 +276,10 @@
             </div>
             <div class="ftr-terms-privacy">
                 <div class="terms-wrapper">
-                    <a href="#" class="ftr-terms" target="_blank">利用規約</a>
+                    <a href="#" class="ftr-t-p ftr-terms" target="_blank">利用規約</a>
                 </div>
                 <div class="privacy-wrapper">
-                    <a href="#" class="ftr-privacy" target="_blank">個人情報保護方針</a>
+                    <a href="#" class="ftr-t-p ftr-privacy" target="_blank">個人情報保護方針</a>
                 </div>
             </div>
             <div class="ftr-social-links">
@@ -283,6 +303,36 @@
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/main.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+
+        loop: true,
+        // cssMode: true,
+        slidesPerView: 1,
+
+        breakpoints: {
+            959: {
+                slidesPerView: 3,
+                spaceBetween: 60
+            }
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination'
+        },
+        keyboard: true,
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+
+@for $i from 1 through 6 {
+    .menu-nav-item:nth-child(#{$i}):hover {
+        opacity: $opacity-half;
+    }
+}
+
+@for $i from 1 through 6 {
+    .footer-nav-item:nth-child(#{$i}):hover {
+        filter: opacity(0.4);
+    }
+}
+
+@for $i from 1 through 6 {
+    .content:nth-child(#{$i}):hover {
+        opacity: $opacity-half;
+    }
+}
+
+.banner-images img:hover {
+    opacity: $opacity-half;
+}
+
+.sp-search-bar-wrapper:hover,
+.sp-search-bar:focus,
+.sp-search-bar-field:focus {
+    opacity: $opacity-half;
+}
+
+.ftr-t-p:hover {
+    opacity: 0.5;
+}
+
+#backToTop:hover {
+    opacity: 0.5;
+}

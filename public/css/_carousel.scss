@@ -1,15 +1,16 @@
 .swiper-container {
     width: 100%;
-    height: 400px;
+    height: 480px;
     text-align: center;
+    z-index: unset;
 }
 
 .swiper-button-next {
     // top: 95%;
     // right: 38%;
-    top: 95%;
-    right: 18%;
-    z-index: 11;
+    top: 95.8%;
+    right: 14%;
+    z-index: unset;
 
     img {
         width: 14px;
@@ -23,15 +24,38 @@
 .swiper-button-prev  {
     // top: 95%;
     // left: 40%;
-    top: 95%;
-    left: 25%;
-    z-index: 11;
+    top: 95.8%;
+    left: 20%;
+    z-index: unset;
 
     img {
         width: 14px;
+        margin: auto 6px;
     }
 
     &::after {
         color: transparent;
     }
+}
+
+.swiper-wrapper,
+.swiper-pagination {
+    z-index: unset;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    border: 1px solid #666;
+    background-color: white;
+    margin: 0 10px;
+    opacity: unset;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #D19999;
+    border: unset;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    width: 50%;
+    left: 25%;
 }

@@ -28,9 +28,18 @@
 }
 
 .ftr-t-p:hover {
-    opacity: 0.5;
+    opacity: $opacity-half;
 }
 
 #backToTop:hover {
-    opacity: 0.5;
+    opacity: $opacity-half;
 }
+
+.swiper-slide img:hover,
+.swiper-pagination-bullets:hover,
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: $opacity-half;
+    cursor: pointer;
+}
+

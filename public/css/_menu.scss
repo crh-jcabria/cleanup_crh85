@@ -9,6 +9,7 @@
     margin-top: 80px;
     overflow: auto;
     background-color: white;
+    z-index: 2;
     
     &.open {
         display: block;

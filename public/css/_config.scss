@@ -32,37 +32,6 @@ $colors: (
     @return map-get($colors, $category);
 }
 
-body {
-    font-family: $hiragino-font;
-    color: $primary-color;
-}
-
-.back-to-top {
-    position: relative;
-    text-align: center;
-}
-
-#backToTop {
-    background-color: $primary-color;
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    outline: none;
-    cursor: pointer;
-    opacity: 0.9;
-
-    img {
-        margin: 12px auto;
-    }
-}
-
-.divider-img {
-    margin: 30px 15px;
-}
 
 @mixin transition {
     transition: all 0.5s ease;
@@ -70,4 +39,40 @@ body {
 
 @mixin transition-2 {
     transition: all 0.3s ease;
+}
+
+@mixin mobile-s {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin mobile-l {
+    @media (min-width: 425px) {
+        @content;
+    }
+}
+
+@mixin mobile-xl {
+    @media (min-width: 480px) { 
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) { 
+        @content;
+    }
+}
+
+@mixin tablet-m {
+    @media (min-width: 959px) { 
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width: 1024px) {
+        @content;
+    }
 }

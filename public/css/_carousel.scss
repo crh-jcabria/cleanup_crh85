@@ -1,3 +1,11 @@
+.carousel {
+    margin-top: 80px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
 .swiper-container {
     width: 100%;
     height: 480px;
@@ -6,8 +14,6 @@
 }
 
 .swiper-button-next {
-    // top: 95%;
-    // right: 38%;
     top: 95.8%;
     right: 14%;
     z-index: unset;
@@ -17,13 +23,11 @@
     }
 
     &::after {
-        color: transparent;
+        display: none;
     }
 }
 
 .swiper-button-prev  {
-    // top: 95%;
-    // left: 40%;
     top: 95.8%;
     left: 20%;
     z-index: unset;
@@ -34,7 +38,7 @@
     }
 
     &::after {
-        color: transparent;
+        display: none;
     }
 }
 

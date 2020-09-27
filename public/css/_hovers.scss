@@ -24,7 +24,7 @@
 .sp-search-bar-wrapper:hover,
 .sp-search-bar:focus,
 .sp-search-bar-field:focus {
-    opacity: $opacity-half;
+    outline-color: #666;
 }
 
 .ftr-t-p:hover {
@@ -43,3 +43,7 @@
     cursor: pointer;
 }
 
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+    outline: 1px solid transparent;
+}

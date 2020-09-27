@@ -1,7 +1,6 @@
 @import 'config';
 @import 'header';
 @import 'menu';
-@import 'carousel-section';
 @import 'content-section';
 @import 'banners';
 @import 'footer';
@@ -9,4 +8,53 @@
 @import 'carousel';
 
 
+body {
+    font-family: $hiragino-font;
+    color: $primary-color;
+}
 
+.back-to-top {
+    position: relative;
+    text-align: center;
+}
+
+#backToTop {
+    background-color: $primary-color;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.9;
+    
+    img {
+        margin: 12px auto;
+    }
+}
+
+.divider-wrapper {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.divider-img-sp {
+    display: block;
+    width: unset;
+}
+
+.divider-img-pc {
+    display: none;
+}
+
+
+
+
+
+
+
+@import 'responsive';

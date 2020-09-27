@@ -1,0 +1,241 @@
+// carousel
+.swiper-container {
+    @include mobile-s {
+        height: 420px;
+    }
+
+    @include mobile-l {
+        height: 540px;
+    }
+
+    @include mobile-xl {
+        height: 465px;
+    }
+
+    @include tablet {
+        height: 468px;
+    }
+}
+
+.swiper-slide img {
+    @include mobile-xl {
+        width: unset;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    @include mobile-xl {
+        top: 95.6%;
+    }
+    
+    @include tablet {
+        top: 96%;
+    }
+}
+
+.swiper-button-next {
+    @include tablet {
+        right: 30%;
+    }
+}
+
+.swiper-button-prev {
+    @include tablet {
+        left: 34%;
+    }
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+    @include mobile-xl {
+        width: 100%;
+    }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    @include tablet {
+        width: 28%;
+        left: 36.5%;
+    }
+}
+
+
+//menu
+.menu-nav-item {
+    @include tablet {
+        width: 200px;
+        height: 200px ;
+    }
+}
+
+
+//contents
+.contents-wrapper {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.content {
+    @include mobile-xl {
+        padding: 40px;
+        margin: auto;
+    }
+
+    @include tablet {
+        width: 380px;
+        margin: initial;
+    }
+}
+
+
+//divider
+.divider-img-sp {
+    @include mobile-s {
+        width: 92%;
+    }
+
+    @include mobile-xl {
+        display: none;
+    }
+
+    @include pc {
+    }
+}
+
+.divider-img-pc {
+    @include mobile-xl {
+        display: block;
+        margin: 30px 13px;
+        width: 92%;
+    }
+}
+
+
+
+
+//footer 
+.banner-images {
+    @include mobile-xl {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+    }
+
+    @include tablet {
+        justify-content: center;
+    }
+
+    @include pc {
+        justify-content: center;
+        column-gap: 50px;
+    }
+    
+    & img {
+        @include mobile-xl {
+            padding: 15px 0;
+            width: 80%;
+        }
+
+        @include pc {
+            width: 100%;
+        }
+    }
+}
+
+.footer-nav {
+    @include tablet {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 30px;
+        row-gap: 25px;
+    }
+
+    .footer-nav-item {
+        @include pc {
+            height: 108px;
+            width: 280px;
+        }
+    }
+}
+
+.post-ftr-bg {
+    @include pc {
+        background: url(../media/images/top/post-bg-pc.png);
+    }
+}
+
+.event-ftr-bg {
+    @include pc {
+        background: url(../media/images/top/event-bg-pc.png);
+    }
+}
+
+.cooking-ftr-bg {
+    @include pc {
+        background: url(../media/images/top/cooking-bg-pc.png);
+    }
+}
+
+.care-ftr-bg {
+    @include pc {
+        background: url(../media/images/top/care-bg-pc.png);
+    }
+}
+
+.storage-ftr-bg {
+    @include pc {
+        background: url(../media/images/top/storage-bg-pc.png);
+    }
+}
+
+.video-ftr-bg {
+    @include pc {
+        background: url(../media/images/top/video-bg-pc.png);
+    }
+}
+
+
+
+.ftr-cleanup-logo img {
+    @include pc {
+        width: 164px;
+        height: auto;
+    }
+}
+
+.ftr-terms-privacy {
+    @include tablet {
+        width: 50%;
+    }
+
+    @include pc {
+        width: 25%;
+    }
+
+    .terms-wrapper {
+        @include pc {
+            margin-right: 15px;
+        }
+    }
+}
+
+.ftr-social-links {
+    @include mobile-xl {
+        background-size: 260% 66%;
+    }
+
+    @include tablet {
+        height: 250px;
+        background-position: bottom left;
+        background-size: unset;
+    }
+
+    @include pc {
+        height: 200px;
+        background-size: contain;
+    }
+}
+

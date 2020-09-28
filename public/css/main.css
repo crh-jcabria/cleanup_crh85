@@ -46,6 +46,10 @@ header {
   color: #B94049;
 }
 
+.brand-name-logo .brand-desc {
+  display: none;
+}
+
 .menu {
   position: absolute;
   z-index: 1;
@@ -227,6 +231,14 @@ header {
   position: absolute;
   right: 20px;
   padding: 14px;
+}
+
+.pc-search-bar-wrapper {
+  display: none;
+}
+
+.pc-search-bar-wrapper .kitchentrip-about {
+  display: none;
 }
 
 .contents {
@@ -633,6 +645,10 @@ header {
   outline-color: #666;
 }
 
+.pc-search-bar-wrapper:hover {
+  opacity: 0.5;
+}
+
 .ftr-t-p:hover {
   opacity: 0.5;
 }
@@ -654,8 +670,47 @@ header {
   outline: 1px solid transparent;
 }
 
+.menu-nav-link.active {
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.menu-nav-link.active .menu-title {
+  padding: 0 5px 5px 5px;
+}
+
+.menu-nav-post.active {
+  background-image: url(../media/images/top/active-post.png);
+}
+
+.menu-nav-event.active {
+  background-image: url(../media/images/top/active-event.png);
+}
+
+.menu-nav-cooking.active {
+  background-image: url(../media/images/top/active-cooking.png);
+}
+
+.menu-nav-usage.active {
+  background-image: url(../media/images/top/active-care.png);
+}
+
+.menu-nav-storage.active {
+  background-image: url(../media/images/top/active-storage.png);
+}
+
+.menu-nav-video.active {
+  background-image: url(../media/images/top/active-video.png);
+}
+
 .carousel {
   margin-top: 80px;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.8;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
 }
 
 .swiper-slide img {
@@ -767,6 +822,119 @@ body {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .brand-menu-wrapper {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .brand-menu-wrapper .brand-desc {
+    display: inline-block;
+    color: #444444;
+    width: 260px;
+    height: 42px;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    margin-left: 25px;
+    padding: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .pc-search-bar-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 20px 28px 20px 20px;
+    font-size: 12px;
+    color: #444444;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .pc-search-bar-wrapper .kitchentrip-about {
+    display: inline-block;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .pc-search-bar-wrapper .pc-search-bar-field {
+    background: #F5F5F5;
+    padding: 16px;
+    width: 100%;
+    border: 1px solid transparent;
+    color: #444444;
+  }
+  header .pc-search-bar-wrapper .pc-search-icon {
+    position: absolute;
+    right: 22px;
+    padding: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: block;
+    position: initial;
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav .sp-search-bar-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav .menu-links {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav .menu-nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .nav .menu-nav li {
+    width: auto;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 320px) {
   .swiper-container {
     height: 420px;
@@ -791,9 +959,27 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .swiper-container {
+    height: 410px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .swiper-container {
+    height: 100%;
+  }
+}
+
 @media (min-width: 480px) {
   .swiper-slide img {
     width: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-slide img {
+    width: 100%;
   }
 }
 
@@ -844,6 +1030,12 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .contents {
+    margin-top: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   .contents-wrapper {
     display: -webkit-box;
@@ -851,6 +1043,14 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contents-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -865,6 +1065,12 @@ body {
   .content {
     width: 380px;
     margin: initial;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: 480px;
   }
 }
 
@@ -1027,6 +1233,7 @@ body {
   .ftr-social-links {
     height: 200px;
     background-size: contain;
+    background-repeat-x: repeat;
   }
 }
 /*# sourceMappingURL=main.css.map */

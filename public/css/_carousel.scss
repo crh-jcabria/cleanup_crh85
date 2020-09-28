@@ -2,8 +2,15 @@
     margin-top: 80px;
 }
 
-.swiper-slide img {
-    width: 100%;
+.swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.8;
+    filter: brightness(75%);
+}
+
+.swiper-slide {
+    img {
+        width: 100%;
+    }
 }
 
 .swiper-container {

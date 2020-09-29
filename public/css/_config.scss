@@ -76,3 +76,9 @@ $colors: (
         @content;
     }
 }
+
+@mixin pc-l {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}

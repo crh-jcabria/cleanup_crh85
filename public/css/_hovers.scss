@@ -27,6 +27,11 @@
     outline-color: #666;
 }
 
+.pc-search-bar-wrapper:hover {
+    opacity: $opacity-half;
+}
+
+
 .ftr-t-p:hover {
     opacity: $opacity-half;
 }
@@ -46,4 +51,37 @@
 .swiper-button-prev:focus,
 .swiper-button-next:focus {
     outline: 1px solid transparent;
+}
+
+.menu-nav-link.active {
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .menu-title {
+        padding: 0 5px 5px 5px;
+    }
+}
+
+.menu-nav-post.active {
+    background-image: url(../media/images/top/active-post.png);
+}
+
+.menu-nav-event.active {
+    background-image: url(../media/images/top/active-event.png);
+}
+
+.menu-nav-cooking.active {
+    background-image: url(../media/images/top/active-cooking.png);
+}
+
+.menu-nav-usage.active {
+    background-image: url(../media/images/top/active-care.png);
+}
+
+.menu-nav-storage.active {
+    background-image: url(../media/images/top/active-storage.png);
+}
+
+.menu-nav-video.active {
+    background-image: url(../media/images/top/active-video.png);
 }

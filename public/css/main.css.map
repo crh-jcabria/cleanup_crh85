@@ -11,6 +11,7 @@
         "_footer.scss",
         "_hovers.scss",
         "_carousel.scss",
+        "_movie.scss",
         "_responsive.scss"
     ],
     "names": [],

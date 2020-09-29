@@ -1,0 +1,29 @@
+
+.keyVisual{
+    margin: 80px 0 0;
+    text-align: center;
+
+    .keyVisual_wrapper {
+        width: 100%;
+        padding: 60px 0;
+        background: url(/public/media/images/kv_bg.png) no-repeat;
+        background-size: cover;
+    }
+    @media (max-width: 480px) {
+        .keyVisual_wrapper {
+            padding: 50px 20px 42px;
+        }
+    }
+
+    .keyVisual_title {
+        margin: 0 0 23px;
+        background: url(/public/media/icons/KvLogo_sp.png) top center no-repeat;
+        padding: 92px 0 0; 
+    }
+
+    @media (max-width: 480px) {
+        .keyVisual_desc {
+            font-size: 0.875rem;
+        }
+    }
+}

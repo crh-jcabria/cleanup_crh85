@@ -370,3 +370,38 @@ header {
     }
 }
 
+//category 
+.key-visual {
+    .kv-icon {
+        @include tablet {
+            width: unset;
+            padding-top: unset;
+        }
+    }
+}
+
+.articles-wrapper {
+    .articles-list {
+        @include mobile-l {
+            margin: auto 40px;
+        }
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+            column-gap: 30px;
+
+            .article {
+                flex-basis: 250px;
+            }
+        }
+
+        @include pc-xl {
+            max-width: 1120px;
+            margin: auto;
+            justify-content: space-between;
+        }
+    }
+}

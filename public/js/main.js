@@ -110,9 +110,12 @@ const handleKeyVisual = (e) => {
     kvDesc.innerHTML = categoryKV[`${category}`].desc;
 };
 
+const toggleNav = (e) => {
+	nav.classList.remove('open');
+};
+
 menuNavLinks.forEach(menuLinks => {
     menuLinks.addEventListener('click', handleClick);
-    menuLinks.addEventListener('click', handleKeyVisual);
+	menuLinks.addEventListener('click', handleKeyVisual);
+	menuLinks.addEventListener('click', toggleNav);
 });
-
-

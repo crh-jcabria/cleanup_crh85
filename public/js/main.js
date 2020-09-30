@@ -3,6 +3,12 @@ const hamburger = document.querySelector('.menu-burger');
 const hamburgerText = document.querySelector('.menu-burger-text');
 const nav = document.querySelector('.nav');
 const backToTop = document.getElementById('backToTop');
+const menuNavLinks = document.querySelectorAll('.menu-nav-link');
+const keyVisual = document.querySelector('.key-visual');
+const kvIcon = document.querySelector('.kv-icon');
+const kvTitle = document.querySelector('.kv-title');
+const kvDesc = document.querySelector('.kv-desc');
+
 
 let showMenu = false;
 hamburgerText.innerHTML = 'Menu';
@@ -27,20 +33,6 @@ function toggleMenu() {
     }
 }
 
-
-// window.addEventListener('scroll', function() {
-//     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         backToTop.style.display = 'block';
-//     } else {
-//         backToTop.style.display = 'none';
-//     }
-// })
-
-// backToTop.addEventListener('click', function() {
-//     window.scrollTo(0, 0);
-// })
-
-
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 20) {
         $('#backToTop').fadeIn(400);
@@ -54,3 +46,73 @@ $('#backToTop').click(function() {
         scrollTop: 0
     }, 500);
 });
+
+//keyvisual category object
+const categoryKV = {
+	'post': {
+		bg: 'url(/public/media/images/post-kv-bg.png) repeat',
+		img: '/public/media/images/post-kv-icon.png',
+		title: 'みんなの投稿',
+		desc: 'みなさんからのキッチンに関する投稿を大公開！各ご家庭でクリナップのキッチンがどのように活用されているかを覗いてみましょう。'
+	},
+	'event': {
+		bg: 'url(/public/media/images/event-kv-bg.png) repeat',
+		img: '/public/media/images/event-kv-icon.png',
+		title: 'イベント',
+		desc: '収納術や季節のお料理教室など、クリナップのキッチンを使いこなすためのイベントを開催しています。'
+	},
+	'kitchen': {
+		bg: 'url(/public/media/images/kitchen-kv-bg.png) repeat',
+		img: '/public/media/images/kitchen-kv-icon.png',
+		title: 'くらし・料理',
+		desc: '季節やライフスタイルに合わせたキッチンの楽しみ方に関する情報をお届けします。'
+	},
+	'care': {
+		bg: 'url(/public/media/images/care-kv-bg.png) repeat',
+		img: '/public/media/images/care-kv-icon.png',
+		title: 'お手入れ・つかい方',
+		desc: 'お手入れについてのお困りごとを解決する情報をお届けします。'
+	},
+	'storage': {
+		bg: 'url(/public/media/images/storage-kv-bg.png) repeat',
+		img: '/public/media/images/storage-kv-icon.png',
+		title: '収納アイデア',
+		desc: 'キッチンライフがより楽しくなる！収納アイデアをご紹介します。'
+	},
+	'movie': {
+		bg: 'url(/public/media/images/movie-kv-bg.png) repeat',
+		img: '/public/media/images/movie-kv-icon.png',
+		title: '動画でみる',
+		desc: 'お手入れやイベントレポートなどの動画はこちらでご覧いただけます。'
+	}
+};
+
+//default key visual
+keyVisual.style.background = categoryKV['post'].bg;
+kvIcon.src = categoryKV['post'].img;
+kvTitle.innerHTML = categoryKV['post'].title;
+kvDesc.innerHTML = categoryKV['post'].desc;
+
+
+const handleClick = (e) => {
+    menuNavLinks.forEach(menuLinks => {
+        menuLinks.classList.remove('active');
+    });
+    e.target.closest('.menu-nav-link').classList.add('active');
+};
+
+const handleKeyVisual = (e) => {
+    let category = e.target.closest('a').dataset.category;
+    
+    keyVisual.style.background = categoryKV[`${category}`].bg;
+    kvIcon.src = categoryKV[`${category}`].img;
+    kvTitle.innerHTML = categoryKV[`${category}`].title;
+    kvDesc.innerHTML = categoryKV[`${category}`].desc;
+};
+
+menuNavLinks.forEach(menuLinks => {
+    menuLinks.addEventListener('click', handleClick);
+    menuLinks.addEventListener('click', handleKeyVisual);
+});
+
+

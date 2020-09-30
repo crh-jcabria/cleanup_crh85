@@ -405,3 +405,22 @@ header {
         }
     }
 }
+
+//article
+.article-wrapper {
+    @include tablet {
+        padding: 50px;
+    }
+}
+
+.article-img {
+    @include mobile-l {
+        width: 100%;
+    }
+}
+
+h2 {
+    @include mobile-l {
+        width: 100%;
+    }
+}

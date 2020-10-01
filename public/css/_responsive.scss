@@ -423,4 +423,14 @@ h2 {
     @include mobile-l {
         width: 100%;
     }
+
+    @include tablet {
+        height: 120px;
+    }
+}
+
+.share-wrapper {
+    @include tablet {
+        background: url(/public/media/images/share-bg.png) round;
+    }
 }

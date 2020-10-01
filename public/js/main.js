@@ -112,6 +112,9 @@ const handleKeyVisual = (e) => {
 
 const toggleNav = (e) => {
 	nav.classList.remove('open');
+	hamburger.classList.remove('open');
+	hamburgerText.innerHTML = 'Menu';
+	showMenu = false;
 };
 
 menuNavLinks.forEach(menuLinks => {

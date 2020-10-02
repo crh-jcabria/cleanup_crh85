@@ -7,6 +7,7 @@
     margin: auto;
     text-align: left;
     padding: 0 20px;
+    padding-bottom: 50px;
 }
 
 .ls {
@@ -48,7 +49,7 @@
 }
 
 .article-img {
-    width: 114%;
+    width: 112%;
     padding-bottom: 16px;
 }
 
@@ -65,13 +66,14 @@
 }
 
 .share-wrapper {
-    background: url(/public/media/images/share-bg-sp.png) round;
+    background: url(/public/media/images/share-bg.png) round;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100%;
     margin: 34px auto;
+    height: 100px;
 
     .share-title {
         font-family: $brand-font;
@@ -104,7 +106,7 @@ h2 {
     font-weight: normal;
     line-height: 36px;
     padding: 0 20px;
-    width: 114%;
+    width: 112%;
     margin-top: 53px;
     margin-bottom: 25px;
     display: grid;
@@ -153,11 +155,13 @@ h5 {
     font-size: 16px;
     line-height: 24px;
     margin: 28px auto 13px auto;
+    width: 100%;
 }
 
 h6 {
     line-height: 21px;
     margin: 29px auto 9px auto;
+    width: 100%;
 }
 
 .light-text {
@@ -264,14 +268,22 @@ h6 {
 .table {
     &.first {
         margin-top: 76px;
+
+        td {
+            text-align: center;
+        }
     }
 
     &.third {
+        margin-bottom: 80px;
+        
         th {
             border-top: 1px solid #ddd;
         }
 
-        margin-bottom: 80px;
+        td:not(.thead) {
+            text-align: center;
+        }
     }
 
     width: 100%;
@@ -299,6 +311,7 @@ h6 {
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
         padding: 4px 10px;
+        text-align: left;
     }
 
     tr:hover {
@@ -308,7 +321,7 @@ h6 {
 
 .article-dummy {
     .dummy-img {
-        height: 224px;
+        height: 100%;
         width: 100%;
     }
 
@@ -415,12 +428,13 @@ h6 {
         line-height: 24px;
 
         .product-name-lg {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
+            line-height: 27px;
         }
 
         .product-desc-lg {
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .product-buy-link {
@@ -428,13 +442,131 @@ h6 {
             text-align: center;
             background-color: #986B6E;
             padding: 10px;
-            margin: auto;
+            margin: 10px auto;
             text-decoration: none;
             color: white;
             font-size: 14px;
             font-weight: normal;
             line-height: 21px;
             letter-spacing: 0.05em;
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 30px;
+            padding-right: 20px;
+
+            img  {
+                align-self: center;
+            }
         }
+    }
+}
+
+.author-wrapper {
+    margin-bottom: 60px;
+}
+
+.pagination {
+    margin-bottom: 55px;
+}
+
+.related-article-wrapper {
+
+    .related-article-title {
+        background: url(/public/media/images/sepline-article-sp.png) no-repeat center;
+        margin-bottom: 22px;
+        width: 100%;
+        text-align: center;
+
+        span {
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 0.05em;
+            background-color: white;
+            padding: 5px 20px;
+        }
+    }
+
+    .related-articles {
+        margin-bottom: 23px;
+    }
+
+    .related-article {
+        padding: 12px 0;
+
+        .article-img {
+            height: 224px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding-bottom: unset;
+
+            img {
+                width: 100%;
+                height: 100%;
+                vertical-align: bottom;
+            }
+        }
+
+        .article-tag {
+            font-size: 12px;
+            color: $dark-pink;
+            padding: 2px 10px;
+            border: 1px solid $dark-pink;
+            display: inline-block;
+            margin: 10px auto;
+        }
+
+        .article-date {
+            font-size: 12px;
+            line-height: 21px;
+            color: #777;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    .sepline-article {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+
+        .line-pc {
+            display: none;
+        }
+    }
+}
+
+.see-articles-wrapper {
+    margin: 60px auto;
+    width: 100%;
+
+    .see-articles {
+        padding: 15px;
+        border: 1px solid #CCCCCC;
+        
+        a {
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+            text-decoration: none;
+            color: $primary-color;
+        }
+
+        span {
+            width: 246px;
+            text-align: center;
+        }
+
+        img {
+            align-self: center;
+            
+        }
+    }
+}
+
+.about-banner {
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
     }
 }

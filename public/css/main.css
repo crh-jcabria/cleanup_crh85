@@ -703,6 +703,10 @@ header {
   background-image: url(../media/images/top/active-video.png);
 }
 
+.about-banner a:hover {
+  opacity: 0.5;
+}
+
 .carousel {
   margin-top: 80px;
 }
@@ -910,6 +914,7 @@ header {
   margin: auto;
   text-align: left;
   padding: 0 20px;
+  padding-bottom: 50px;
 }
 
 .ls {
@@ -951,7 +956,7 @@ header {
 }
 
 .article-img {
-  width: 114%;
+  width: 112%;
   padding-bottom: 16px;
 }
 
@@ -968,7 +973,7 @@ header {
 }
 
 .share-wrapper {
-  background: url(/public/media/images/share-bg-sp.png) round;
+  background: url(/public/media/images/share-bg.png) round;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,6 +987,7 @@ header {
   text-align: center;
   width: 100%;
   margin: 34px auto;
+  height: 100px;
 }
 
 .share-wrapper .share-title {
@@ -1018,7 +1024,7 @@ h2 {
   font-weight: normal;
   line-height: 36px;
   padding: 0 20px;
-  width: 114%;
+  width: 112%;
   margin-top: 53px;
   margin-bottom: 25px;
   display: -ms-grid;
@@ -1073,11 +1079,13 @@ h5 {
   font-size: 16px;
   line-height: 24px;
   margin: 28px auto 13px auto;
+  width: 100%;
 }
 
 h6 {
   line-height: 21px;
   margin: 29px auto 9px auto;
+  width: 100%;
 }
 
 .light-text {
@@ -1211,12 +1219,20 @@ h6 {
   margin-top: 76px;
 }
 
+.table.first td {
+  text-align: center;
+}
+
 .table.third {
   margin-bottom: 80px;
 }
 
 .table.third th {
   border-top: 1px solid #ddd;
+}
+
+.table.third td:not(.thead) {
+  text-align: center;
 }
 
 .table thead,
@@ -1234,6 +1250,7 @@ h6 {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 4px 10px;
+  text-align: left;
 }
 
 .table tr:hover {
@@ -1241,7 +1258,7 @@ h6 {
 }
 
 .article-dummy .dummy-img {
-  height: 224px;
+  height: 100%;
   width: 100%;
 }
 
@@ -1371,12 +1388,13 @@ h6 {
 }
 
 .product-wrapper-lg .product-details-lg .product-name-lg {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 27px;
 }
 
 .product-wrapper-lg .product-details-lg .product-desc-lg {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .product-wrapper-lg .product-details-lg .product-buy-link {
@@ -1384,13 +1402,142 @@ h6 {
   text-align: center;
   background-color: #986B6E;
   padding: 10px;
-  margin: auto;
+  margin: 10px auto;
   text-decoration: none;
   color: white;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
   letter-spacing: 0.05em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  padding-right: 20px;
+}
+
+.product-wrapper-lg .product-details-lg .product-buy-link img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.author-wrapper {
+  margin-bottom: 60px;
+}
+
+.pagination {
+  margin-bottom: 55px;
+}
+
+.related-article-wrapper .related-article-title {
+  background: url(/public/media/images/sepline-article-sp.png) no-repeat center;
+  margin-bottom: 22px;
+  width: 100%;
+  text-align: center;
+}
+
+.related-article-wrapper .related-article-title span {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  background-color: white;
+  padding: 5px 20px;
+}
+
+.related-article-wrapper .related-articles {
+  margin-bottom: 23px;
+}
+
+.related-article-wrapper .related-article {
+  padding: 12px 0;
+}
+
+.related-article-wrapper .related-article .article-img {
+  height: 224px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: unset;
+}
+
+.related-article-wrapper .related-article .article-img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.related-article-wrapper .related-article .article-tag {
+  font-size: 12px;
+  color: #986B6E;
+  padding: 2px 10px;
+  border: 1px solid #986B6E;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.related-article-wrapper .related-article .article-date {
+  font-size: 12px;
+  line-height: 21px;
+  color: #777;
+  letter-spacing: 0.05em;
+}
+
+.related-article-wrapper .sepline-article {
+  width: 100%;
+}
+
+.related-article-wrapper .sepline-article img {
+  width: 100%;
+}
+
+.related-article-wrapper .sepline-article .line-pc {
+  display: none;
+}
+
+.see-articles-wrapper {
+  margin: 60px auto;
+  width: 100%;
+}
+
+.see-articles-wrapper .see-articles {
+  padding: 15px;
+  border: 1px solid #CCCCCC;
+}
+
+.see-articles-wrapper .see-articles a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  text-decoration: none;
+  color: #444444;
+}
+
+.see-articles-wrapper .see-articles span {
+  width: 246px;
+  text-align: center;
+}
+
+.see-articles-wrapper .see-articles img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about-banner {
+  margin-bottom: 50px;
+}
+
+.about-banner img {
+  width: 100%;
 }
 
 body {
@@ -1902,13 +2049,31 @@ body {
 
 @media (min-width: 768px) {
   .article-wrapper {
-    padding: 50px;
+    padding: 0 50px 50px;
+  }
+}
+
+@media (min-width: 959px) {
+  .article-wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .article-img {
+    width: 114%;
   }
 }
 
 @media (min-width: 425px) {
   .article-img {
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    width: 114%;
   }
 }
 
@@ -1927,6 +2092,238 @@ body {
 @media (min-width: 768px) {
   .share-wrapper {
     background: url(/public/media/images/share-bg.png) round;
+  }
+}
+
+@media (min-width: 425px) {
+  .swiper-container.swiper-container-article {
+    height: 310px;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-container.swiper-container-article {
+    height: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-container.swiper-container-article .swiper-button-next.swiper-button-next-article {
+    right: 29%;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-container.swiper-container-article .swiper-button-prev.swiper-button-prev-article {
+    left: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-container.swiper-container-article .swiper-button-next.swiper-button-next-article,
+  .swiper-container.swiper-container-article .swiper-button-prev.swiper-button-prev-article {
+    top: 96.4%;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper {
+    height: 100%;
+    padding: 15px;
+    -webkit-column-gap: 21px;
+            column-gap: 21px;
+  }
+}
+
+@media (min-width: 480px) {
+  .product-wrapper .product-img {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    height: unset;
+    width: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper .product-img {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper .product-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper .product-details {
+    row-gap: 34px;
+    font-size: 18px;
+    line-height: 27px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper-lg {
+    background: url(/public/media/images/product-bg-lg.png) no-repeat;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: unset;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper-lg .product-img-lg img {
+    width: 240px;
+    height: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper-lg .product-details-lg .product-desc-lg {
+    line-height: 28px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper-lg .product-details-lg .product-buy-link {
+    margin: auto auto auto 0;
+    width: unset;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 425px) {
+  .product-wrapper-lg .product-details-lg .product-buy-link span {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-wrapper-lg .product-details-lg .product-buy-link span {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-dummy-wrapper-1,
+  .article-dummy-wrapper-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-dummy-wrapper-1 .article-dummy .dummy-img,
+  .article-dummy-wrapper-2 .article-dummy .dummy-img {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-dummy-wrapper-1 {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .related-article-wrapper .related-article-title {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 425px) {
+  .related-article-wrapper .related-article-title {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 480px) {
+  .related-article-wrapper .related-article-title {
+    background: url(/public/media/images/sepline-article.png) no-repeat center;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .related-article-wrapper .related-articles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+    margin: auto 40px;
+    padding-top: 20px;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .related-article-wrapper .related-articles {
+    margin: auto 95px;
+  }
+}
+
+@media (max-width: 320px) {
+  .related-article-wrapper .related-article .article-img {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .related-article-wrapper .related-article .article-img {
+    height: 167px;
+  }
+}
+
+@media (min-width: 480px) {
+  .related-article-wrapper .sepline-article .line-pc {
+    display: block;
+  }
+  .related-article-wrapper .sepline-article .line-sp {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .related-article-wrapper .sepline-article {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .see-articles-wrapper {
+    width: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-banner {
+    width: 540px;
   }
 }
 /*# sourceMappingURL=main.css.map */

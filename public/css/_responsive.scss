@@ -409,17 +409,29 @@ header {
 //article
 .article-wrapper {
     @include tablet {
-        padding: 50px;
+        padding: 0 50px 50px;
+    }
+
+    @include tablet-m {
+        padding: 0;
     }
 }
 
 .article-img {
+    @include mobile-s {
+        width: 114%;
+    }
+
     @include mobile-l {
         width: 100%;
     }
 }
 
 h2 {
+    @include mobile-s {
+        width: 114%;
+    }
+
     @include mobile-l {
         width: 100%;
     }
@@ -432,5 +444,217 @@ h2 {
 .share-wrapper {
     @include tablet {
         background: url(/public/media/images/share-bg.png) round;
+    }
+}
+
+.swiper-container.swiper-container-article {
+    @include mobile-l {
+        height: 310px;
+    }
+
+    @include tablet {
+        height: 550px;
+    }
+
+    .swiper-button-next.swiper-button-next-article{
+        @include tablet {
+            right: 29%;
+        }
+    }
+
+    .swiper-button-prev.swiper-button-prev-article {
+        @include tablet {
+            left: 30%;
+        }
+    }
+
+    .swiper-button-next.swiper-button-next-article,
+    .swiper-button-prev.swiper-button-prev-article {
+        @include tablet {
+            top: 96.4%;
+        }
+    }
+}
+
+.product-wrapper {
+    @include tablet {
+        height: 100%;
+        padding: 15px;
+        column-gap: 21px;
+    }
+
+    .product-img {
+        @include mobile-xl {
+            display: grid;
+            grid-template-columns: auto;
+            height: unset;
+            width: unset;
+        }
+
+        @include tablet {
+            height: 100px;
+            width: 150px;
+        }
+
+        img {
+            @include tablet {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .product-details {
+        @include tablet {
+            row-gap: 34px;
+            font-size: 18px;
+            line-height: 27px;
+            justify-content: center;
+        }
+    }
+}
+
+.product-wrapper-lg {
+    @include tablet {
+        background: url(/public/media/images/product-bg-lg.png) no-repeat;
+        flex-direction: row;
+        height: unset;
+        column-gap: 40px;
+        align-items: flex-start;
+    }
+
+    .product-img-lg {
+        img {
+            @include tablet {
+                width: 240px;
+                height: 160px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .product-details-lg {
+        .product-desc-lg {
+            @include tablet {
+                line-height: 28px;
+                padding-bottom: 12px;
+            }
+        }
+
+        .product-buy-link {
+            @include tablet {
+                margin: auto auto auto 0;
+                width: unset;
+                padding-left: 30px;
+            }
+            
+            span {
+                @include mobile-l {
+                    width: 75%;
+                }
+    
+                @include tablet {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+} 
+
+.article-dummy-wrapper-1,
+.article-dummy-wrapper-2 {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+    }
+    
+    .article-dummy .dummy-img {
+        @include tablet {
+            height: 100%;
+        }
+    }
+}
+
+.article-dummy-wrapper-1 {
+    @include pc {
+        margin-bottom: 35px;
+    }
+}
+
+
+
+.related-article-wrapper {
+
+
+    .related-article-title {
+        @include mobile-s {
+            background-size: contain;
+        }
+
+        @include mobile-l {
+            background-size: contain;
+        }
+
+        @include mobile-xl {
+            background: url(/public/media/images/sepline-article.png) no-repeat center;
+            background-size: 100%;
+        }
+    }
+
+    .related-articles {
+        @include tablet {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 60px;
+            margin: auto 40px;
+            padding-top: 20px;
+            padding-bottom: 54px;
+        }
+        
+        @include pc {
+            margin: auto 95px;
+        }
+    }
+
+    .related-article {
+        .article-img {
+            @include mobile-s {
+                height: auto;
+            }
+
+            @include tablet {
+                height: 167px;
+            }
+        }
+    }
+
+    .sepline-article {
+        @include mobile-xl {
+            .line-pc {
+                display: block;
+            }
+            
+            .line-sp {
+                display: none;
+            }
+        }
+
+        @include tablet {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.see-articles-wrapper {
+    @include tablet {
+        width: unset;
+    }
+}
+
+.about-banner {
+    @include tablet {
+        width: 540px;
     }
 }

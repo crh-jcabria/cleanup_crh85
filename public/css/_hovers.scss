@@ -85,3 +85,7 @@
 .menu-nav-video.active {
     background-image: url(../media/images/top/active-video.png);
 }
+
+.about-banner a:hover {
+    opacity: $opacity-half;
+}

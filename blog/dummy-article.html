@@ -132,7 +132,7 @@
                         </a>
                     </div>
                     <div class="share-link-wrapper">
-                        <a href="#" class="share-link" target="_blank">
+                        <a href="https://twitter.com/share?  url={Page URL}&  via={Twitter ID}&related={Twitter ID}& hashtags=hashtag,hashtag2&text={Page Title&URL}" rel="nofollow" target="_blank" class="share-link" target="_blank">
                             <img src="/public/media/icons/socials/twitter_logo.png" alt="Twitter icon" class="share-logo">
                         </a>
                     </div>
@@ -142,7 +142,7 @@
                         </a>
                     </div>
                     <div class="share-link-wrapper">
-                        <a href="#" class="share-link" target="_blank">
+                        <a href="http://line.me/R/msg/text/?{Page Title&URL}" class="share-link" target="_blank">
                             <img src="/public/media/icons/socials/line_logo.png" alt="Line icon" class="share-logo">
                         </a>
                     </div>
@@ -344,22 +344,22 @@
             <div class="swiper-container swiper-container-article">
                 <div class="swiper-wrapper swiper-wrapper-article">
                     <div class="swiper-slide swiper-slide-article">
-                        <a href="https://crm.cleanup.jp/plan" target="_blank">
+                        <a href="#">
                             <img src="/public/media/images/dummy-img-lg.png" alt="Carousel Image">
                         </a>
                     </div>
                     <div class="swiper-slide swiper-slide-article">
-                        <a href="https://crm.cleanup.jp/plan" target="_blank">
+                        <a href="#">
                             <img src="/public/media/images/dummy-img-lg.png" alt="Carousel Image">
                         </a>
                     </div>
                     <div class="swiper-slide swiper-slide-article">
-                        <a href="https://crm.cleanup.jp/plan" target="_blank">
+                        <a href="#">
                             <img src="/public/media/images/dummy-img-lg.png" alt="Carousel Image">
                         </a>
                     </div>
                     <div class="swiper-slide swiper-slide-article">
-                        <a href="https://crm.cleanup.jp/plan" target="_blank">
+                        <a href="#">
                             <img src="/public/media/images/dummy-img-lg.png" alt="Carousel Image">
                         </a>
                     </div>
@@ -421,7 +421,7 @@
             </div>
             <div class="product-wrapper-lg">
                 <div class="product-img-lg">
-                    <img src="/public/media/images/dummy-img.png" alt="Product image">
+                    <img src="/public/media/images/dummy-img-lg.png" alt="Product image">
                 </div>
                 <div class="product-details-lg">
                     <div class="product-name-lg">両手鍋</div>
@@ -431,6 +431,48 @@
                         <img src="/public/media/icons/i_win.png" alt="Submit icon">
                     </a>
                 </div>
+            </div>
+            <div class="author-wrapper"></div>
+            <div class="pagination"></div>
+            <div class="related-article-wrapper">
+                <div class="related-article-title">
+                    <span>関連記事</span>
+                </div>
+                <div class="related-articles">
+                    <div class="related-article">
+                        <div class="article-img">
+                            <img src="/public/media/images/dummy-img-lg.png" alt="Dummy related article image">
+                        </div>
+                        <div class="article-tag">レシピ</div>
+                        <div class="article-desc font-14 ls lh-28">[季節を味わう]中村奈津子先生に教わる旬のレシピ(12月)</div>
+                        <div class="article-date">2020.12.28</div>
+                    </div>
+                    <div class="related-article">
+                        <div class="article-img">
+                            <img src="/public/media/images/dummy-img-lg.png" alt="Dummy related article image">
+                        </div>
+                        <div class="article-tag">レシピ</div>
+                        <div class="article-desc font-14 ls lh-28">[季節を味わう]中村奈津子先生に教わる旬のレシピ(12月)</div>
+                        <div class="article-date">2020.12.28</div>
+                    </div>
+                </div>
+                <div class="sepline-article">
+                    <img src="/public/media/images/sepline-article-sp.png" class="line-sp" alt="Border image">
+                    <img src="/public/media/images/sepline-article.png" class="line-pc" alt="Border image">
+                </div>
+            </div>
+            <div class="see-articles-wrapper">
+                <div class="see-articles">
+                    <a href="#" target="_blank">
+                        <span>つくるキッチン 記事一覧へ</span>
+                        <img src="/public/media/icons/see-details-arrow.png" alt="Arrow icon">
+                    </a>
+                </div>
+            </div>
+            <div class="about-banner">
+                <a href="#">
+                    <img src="/public/media/images/about_banner.png" alt="Banner image">
+                </a>
             </div>
 
         </div>
@@ -510,12 +552,6 @@
         slidesPerView: 1,
         centeredSlides: true,
 
-        breakpoints: {
-            959: {
-                slidesPerView: 3,
-                spaceBetween: 60
-            },
-        },
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,

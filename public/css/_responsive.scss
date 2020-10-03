@@ -658,3 +658,77 @@ h2 {
         width: 540px;
     }
 }
+
+//about
+.key-visual-about {
+    @include tablet {
+        background: url(/public/media/images/about/about_titleBg_pc.png);
+
+        .kv-about-wrapper-pc {
+            display: block;
+        }
+
+        .kv-about-wrapper-sp {
+            display: none;
+        }
+    }
+}
+
+.about-details-wrapper {
+    @include tablet {
+        margin: auto 60px;
+        padding-left: unset;
+        padding-right: unset;
+        padding-top: 90px;
+
+        .break-line {
+            display: block;
+        }
+    }
+
+    @include tablet-m {
+        max-width: 710px;
+        margin: auto;
+    }
+    
+    .about-details {
+        @include tablet {
+            text-align: center;
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+}
+
+.about-btn-wrapper {
+    @include tablet {
+        margin-bottom: 120px;
+    }
+
+    .about-btn {
+        @include tablet {
+            width: 180px;
+            margin: auto;
+        }
+    }
+} 
+
+.about-terms-wrapper {
+    @include tablet {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 60px;
+    }
+
+    @include tablet-m {
+        max-width: 750px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .terms-details {
+        @include tablet {
+            margin-bottom: 120px;
+        }
+    }
+}

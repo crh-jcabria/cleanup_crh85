@@ -202,6 +202,8 @@ header {
 
     @include pc {
         justify-content: center;
+        max-width: 1120px;
+        margin: auto;
     }
 }
 
@@ -217,7 +219,7 @@ header {
     }
 
     @include pc {
-        width: 480px;
+        width: 520px;
     }
 }
 
@@ -276,6 +278,10 @@ header {
 }
 
 .footer-nav {
+    @include mobile-s {
+        grid-template-columns: auto;
+    }
+
     @include tablet {
         display: grid;
         grid-template-columns: auto auto auto;

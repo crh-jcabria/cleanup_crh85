@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 
     .kv-icon {
         width: 100px;
@@ -16,6 +17,7 @@
         letter-spacing: 0.1em;
         font-family: fot-tsukuardgothic-std, sans-serif;
         color: $primary-color;
+        padding-top: 6px;
     }
 
     .kv-desc {
@@ -24,7 +26,6 @@
         color: $primary-color;
         text-align: center;
         padding: 10px 18px;
-
     }
 }
 

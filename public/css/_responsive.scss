@@ -732,3 +732,53 @@ h2 {
         }
     }
 }
+
+.movie-lists-wrapper {
+    @include mobile-l {
+        margin: auto 40px;
+    }
+
+    .tag-lists-wrapper {
+        @include tablet {
+            max-width: 540px;
+            margin: 60px auto auto auto;
+        }
+    }
+
+    .tag-list-title {
+        @include tablet {
+            margin: 74px auto;
+        }
+    }
+
+    .articles-list.tag-articles-list {
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+            column-gap: 30px;
+
+            .article {
+                flex-basis: 250px;
+
+                .article-date {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+
+        @include pc-xl {
+            max-width: 1120px;
+            margin: auto;
+            justify-content: space-between;
+        }
+    }
+    
+    .anchor-link-wrapper {
+        @include tablet {
+            padding-bottom: 80px;
+        }
+    }
+}

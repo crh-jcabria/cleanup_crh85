@@ -222,8 +222,6 @@ h6 {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        column-gap: 10px;
-        row-gap: 10px;
         margin: 6px auto;
 
         .article-tag {
@@ -232,6 +230,8 @@ h6 {
             padding: 2px 10px;
             border: 1px solid $dark-pink;
             display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -242,10 +242,10 @@ h6 {
 
     .arrow-list {
         display: inline-flex;
-        column-gap: 10px;
         align-items: baseline;
 
         img {
+            margin-right: 10px;
             object-fit: contain;
         }
     }
@@ -363,11 +363,11 @@ h6 {
     width: 100%;
     display: flex;
     align-items: center;
-    column-gap: 15px;
     padding: 10px;
     margin-bottom: 80px;
 
     .product-img {
+        margin-right: 15px;
         height: 62px;
         width: auto;
         
@@ -451,8 +451,11 @@ h6 {
             letter-spacing: 0.05em;
             display: flex;
             justify-content: flex-end;
-            column-gap: 30px;
             padding-right: 20px;
+
+            span {
+                margin-right: 30px;
+            }
 
             img  {
                 align-self: center;
@@ -673,12 +676,12 @@ h6 {
         a {
             display: flex;
             justify-content: center;
-            column-gap: 30px;
             text-decoration: none;
             color: $primary-color;
         }
 
         span {
+            margin-right: 30px;
             width: 246px;
             text-align: center;
         }

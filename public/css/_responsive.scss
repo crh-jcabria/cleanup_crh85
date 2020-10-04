@@ -486,7 +486,6 @@ h2 {
     @include tablet {
         height: 100%;
         padding: 15px;
-        column-gap: 21px;
     }
 
     .product-img {
@@ -498,6 +497,7 @@ h2 {
         }
 
         @include tablet {
+            margin-right: 21px;
             height: 100px;
             width: 150px;
         }
@@ -525,11 +525,14 @@ h2 {
         background: url(/public/media/images/product-bg-lg.png) no-repeat;
         flex-direction: row;
         height: unset;
-        column-gap: 40px;
         align-items: flex-start;
     }
 
     .product-img-lg {
+        @include tablet {
+            margin-right: 40px;
+        }
+
         img {
             @include tablet {
                 width: 240px;

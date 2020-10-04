@@ -31,6 +31,15 @@
     text-align: left;
 }
 
+.asterisk {
+    display: inline-grid;
+    vertical-align: middle;
+    font-family: $brand-font;
+    padding-top: 8px;
+    font-weight: normal;
+    font-size: 26px;
+}
+
 .see-details-wrapper {
     border: 1px solid #CCCCCC;
     height: 50px;

@@ -10,12 +10,17 @@
     margin: 30px auto;
 }
 
+.content-link {
+    text-decoration: none;
+}
+
 .content-image {
     width: 100%;
 }
 
 .content-title {
-    padding: 15px;
+    padding-top: 13px;
+    padding-bottom: 21px;
     font-size: 20px;
     letter-spacing: 2px;
     font-family: fot-tsukuardgothic-std, sans-serif;
@@ -27,8 +32,9 @@
     padding: 22px 10px;
     font-size: 14px;
     letter-spacing: 0.05em;
-    line-height: 28px;
+    line-height: 2;
     text-align: left;
+    color: $primary-color;
 }
 
 .asterisk {

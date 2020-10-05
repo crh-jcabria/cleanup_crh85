@@ -28,7 +28,8 @@
     outline-color: #666;
 }
 
-.pc-search-bar-wrapper:hover {
+.pc-search-bar-wrapper a:hover,
+.pc-search-bar:hover {
     opacity: $opacity-half;
 }
 

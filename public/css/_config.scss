@@ -17,7 +17,7 @@ $primary-color: #444444;
 $brand-color: #B94049;
 $dark-pink: #986B6E;
 $brand-font: 'Courgette', Arial, Helvetica, sans-serif;
-$hiragino-font: 'hiragino', Arial, Helvetica, sans-serif;
+$hiragino-font: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 $opacity-half: 0.5;
 
 $colors: (
@@ -36,10 +36,6 @@ $colors: (
 
 @mixin transition {
     transition: all 0.5s ease;
-}
-
-@mixin transition-2 {
-    transition: all 0.3s ease;
 }
 
 @mixin mobile-s {

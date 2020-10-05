@@ -20,12 +20,17 @@ header {
             @include pc {
                 display: inline-block;
                 color: $primary-color;
-                width: 260px;
                 height: 42px;
-                font-size: 10px;
+                font-size: 12px;
                 letter-spacing: 0.05em;
-                margin-left: 25px;
+                margin-left: 18px;
                 padding: 6px;
+            }
+        }
+
+        .brand-logo {
+            @include pc {
+                width: auto;
             }
         }
     }
@@ -35,7 +40,7 @@ header {
             display: inline-flex;
             align-items: baseline;
             padding: 20px 28px 20px 20px;
-            font-size: 12px;
+            font-size: 14px;
             color: $primary-color;
         }
 
@@ -68,7 +73,7 @@ header {
     @include pc {
         display: block;
         position: initial;
-        margin-top: 110px;
+        margin-top: 130px;
     }
 
     .sp-search-bar-wrapper {
@@ -87,6 +92,8 @@ header {
         @include pc {
             justify-content: space-evenly;
             align-items: baseline;
+            max-width: 1120px;
+            margin: auto;
 
             & li {
                 width: auto;
@@ -199,9 +206,9 @@ header {
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     @include pc {
-        justify-content: center;
+        justify-content: space-between;
         max-width: 1120px;
         margin: auto;
     }
@@ -218,8 +225,41 @@ header {
         margin: initial;
     }
 
+    @include tablet-m {
+        padding: 40px 0;
+        margin: auto;
+    }
+
     @include pc {
         width: 520px;
+        padding: 40px;
+
+        .content-title {
+            font-size: 24px;
+        }
+
+        .content-desc {
+            font-size: 16px;
+        }
+
+        .content-icon {
+            margin-bottom: 6px;
+        }
+
+        .content-image {
+            margin-top: 20px;
+        }
+    }
+
+    @include pc-xl {
+        padding: 40px 0;
+    }
+}
+
+.see-details-wrapper {
+    @include tablet {
+        width: auto;
+        display: inline-grid;
     }
 }
 
@@ -277,6 +317,12 @@ header {
     }
 }
 
+.banner-title {
+    @include pc {
+        font-size: 24px;
+    }
+}
+
 .footer-nav {
     @include mobile-s {
         grid-template-columns: auto;
@@ -293,6 +339,12 @@ header {
         @include pc {
             height: 108px;
             width: 280px;
+
+        }
+        .footer-nav-link {
+            @include pc {
+                font-size: 24px;
+            }
         }
     }
 }
@@ -348,7 +400,7 @@ header {
     }
 
     @include pc {
-        width: 25%;
+        width: 20%;
     }
 
     .terms-wrapper {
@@ -384,9 +436,27 @@ header {
             padding-top: unset;
         }
     }
+
+    .kv-title {
+        @include pc {
+            font-size: 36px;
+        }
+    }
+
+    .kv-desc {
+        @include pc {
+            font-size: 16px;
+        }
+    }
 }
 
 .articles-wrapper {
+    .list-title {
+        @include pc {
+            font-size: 24px;
+        }
+    }
+
     .articles-list {
         @include mobile-l {
             margin: auto 40px;
@@ -433,7 +503,7 @@ header {
     }
 }
 
-h2 {
+h2:not(.transparent) {
     @include mobile-s {
         width: 114%;
     }
@@ -545,7 +615,7 @@ h2 {
     .product-details-lg {
         .product-desc-lg {
             @include tablet {
-                line-height: 28px;
+                line-height: 1.75px;
                 padding-bottom: 12px;
             }
         }

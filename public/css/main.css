@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @font-face {
   font-family: 'hiragino';
@@ -25,6 +26,15 @@ header {
   font-family: "Courgette", Arial, Helvetica, sans-serif;
 }
 
+.brand-menu-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .brand-name-logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -36,9 +46,8 @@ header {
 }
 
 .brand-name-logo .brand-logo {
-  height: 50px;
-  width: 50px;
   margin-right: 15px;
+  width: 178px;
 }
 
 .brand-name-logo .brand-name {
@@ -46,7 +55,7 @@ header {
   color: #B94049;
 }
 
-.brand-name-logo .brand-desc {
+.brand-desc {
   display: none;
 }
 
@@ -241,6 +250,11 @@ header {
   display: none;
 }
 
+.pc-search-bar-wrapper a {
+  text-decoration: none;
+  color: #444444;
+}
+
 .contents {
   margin-top: 80px;
 }
@@ -258,12 +272,17 @@ header {
   margin: 30px auto;
 }
 
+.content-link {
+  text-decoration: none;
+}
+
 .content-image {
   width: 100%;
 }
 
 .content-title {
-  padding: 15px;
+  padding-top: 13px;
+  padding-bottom: 21px;
   font-size: 20px;
   letter-spacing: 2px;
   font-family: fot-tsukuardgothic-std, sans-serif;
@@ -275,8 +294,9 @@ header {
   padding: 22px 10px;
   font-size: 14px;
   letter-spacing: 0.05em;
-  line-height: 28px;
+  line-height: 2;
   text-align: left;
+  color: #444444;
 }
 
 .asterisk {
@@ -457,12 +477,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-}
-
-.ftr-brand-name .ftr-brand-logo {
-  height: 65px;
-  width: 65px;
-  margin-right: 20px;
 }
 
 .ftr-brand-name .ftr-brand-name {
@@ -655,7 +669,8 @@ header {
   outline-color: #666;
 }
 
-.pc-search-bar-wrapper:hover {
+.pc-search-bar-wrapper a:hover,
+.pc-search-bar:hover {
   opacity: 0.5;
 }
 
@@ -901,7 +916,7 @@ header {
 .articles-list .article-desc {
   font-size: 14px;
   color: #444444;
-  line-height: 28px;
+  line-height: 1.75;
   letter-spacing: 0.05em;
   margin: 4px auto;
 }
@@ -990,7 +1005,7 @@ header {
 .articles-wrapper .articles-list .article-desc {
   font-size: 14px;
   color: #444444;
-  line-height: 28px;
+  line-height: 1.75;
   letter-spacing: 0.05em;
   margin: 4px auto;
 }
@@ -999,7 +1014,7 @@ header {
   font-size: 12px;
   color: #777;
   letter-spacing: 0.05em;
-  line-height: 21px;
+  line-height: 1.75;
   margin-bottom: 35px;
 }
 
@@ -1029,7 +1044,7 @@ header {
 }
 
 .lh-28 {
-  line-height: 28px;
+  line-height: 1.75;
 }
 
 .font-14 {
@@ -1125,7 +1140,7 @@ header {
   padding-top: 6px;
 }
 
-h2 {
+h2:not(.transparent) {
   background: url(/public/media/images/h2-bg.png) round;
   height: 142px;
   font-weight: normal;
@@ -1753,7 +1768,7 @@ h6 {
 
 .related-article-wrapper .related-article .article-date {
   font-size: 12px;
-  line-height: 21px;
+  line-height: 1.75;
   color: #777;
   letter-spacing: 0.05em;
 }
@@ -1931,8 +1946,9 @@ h6 {
 }
 
 body {
-  font-family: "hiragino", Arial, Helvetica, sans-serif;
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   color: #444444;
+  line-height: 1.5;
 }
 
 .back-to-top {
@@ -2004,12 +2020,17 @@ body {
   header .brand-menu-wrapper .brand-desc {
     display: inline-block;
     color: #444444;
-    width: 260px;
     height: 42px;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.05em;
-    margin-left: 25px;
+    margin-left: 18px;
     padding: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .brand-menu-wrapper .brand-logo {
+    width: auto;
   }
 }
 
@@ -2022,7 +2043,7 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     padding: 20px 28px 20px 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: #444444;
   }
 }
@@ -2053,7 +2074,7 @@ body {
   .nav {
     display: block;
     position: initial;
-    margin-top: 110px;
+    margin-top: 130px;
   }
 }
 
@@ -2077,6 +2098,8 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    max-width: 1120px;
+    margin: auto;
   }
   .nav .menu-nav li {
     width: auto;
@@ -2203,9 +2226,9 @@ body {
 
 @media (min-width: 1024px) {
   .contents-wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 1120px;
     margin: auto;
   }
@@ -2225,9 +2248,43 @@ body {
   }
 }
 
+@media (min-width: 959px) {
+  .content {
+    padding: 40px 0;
+    margin: auto;
+  }
+}
+
 @media (min-width: 1024px) {
   .content {
     width: 520px;
+    padding: 40px;
+  }
+  .content .content-title {
+    font-size: 24px;
+  }
+  .content .content-desc {
+    font-size: 16px;
+  }
+  .content .content-icon {
+    margin-bottom: 6px;
+  }
+  .content .content-image {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .see-details-wrapper {
+    width: auto;
+    display: -ms-inline-grid;
+    display: inline-grid;
   }
 }
 
@@ -2292,6 +2349,12 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .banner-title {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 320px) {
   .footer-nav {
     -ms-grid-columns: auto;
@@ -2315,6 +2378,12 @@ body {
   .footer-nav .footer-nav-item {
     height: 108px;
     width: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-nav .footer-nav-item .footer-nav-link {
+    font-size: 24px;
   }
 }
 
@@ -2369,7 +2438,7 @@ body {
 
 @media (min-width: 1024px) {
   .ftr-terms-privacy {
-    width: 25%;
+    width: 20%;
   }
 }
 
@@ -2405,6 +2474,24 @@ body {
   .key-visual .kv-icon {
     width: unset;
     padding-top: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  .key-visual .kv-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .key-visual .kv-desc {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles-wrapper .list-title {
+    font-size: 24px;
   }
 }
 
@@ -2471,19 +2558,19 @@ body {
 }
 
 @media (max-width: 320px) {
-  h2 {
+  h2:not(.transparent) {
     width: 114%;
   }
 }
 
 @media (min-width: 425px) {
-  h2 {
+  h2:not(.transparent) {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  h2 {
+  h2:not(.transparent) {
     height: 120px;
   }
 }
@@ -2601,7 +2688,7 @@ body {
 
 @media (min-width: 768px) {
   .product-wrapper-lg .product-details-lg .product-desc-lg {
-    line-height: 28px;
+    line-height: 1.75px;
     padding-bottom: 12px;
   }
 }

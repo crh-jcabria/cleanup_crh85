@@ -12,6 +12,11 @@ header {
     font-family: $brand-font;
 }
 
+.brand-menu-left {
+    display: flex;
+    align-items: center;
+}
+
 
 .brand-name-logo {
     display: inline-flex;
@@ -19,9 +24,8 @@ header {
     text-decoration: none;
 
     .brand-logo {
-        height: 50px;
-        width: 50px;
         margin-right: 15px;
+        width: 178px;
     }
     
     .brand-name {
@@ -29,9 +33,10 @@ header {
         color: $brand-color;
     }
 
-    .brand-desc {
-        display: none;
-    }
+}
+
+.brand-desc {
+    display: none;
 }
 
 

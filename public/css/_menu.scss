@@ -103,4 +103,9 @@
     .kitchentrip-about {
         display: none;
     }
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
 }

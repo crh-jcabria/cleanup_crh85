@@ -23,11 +23,12 @@
     
     <header>
         <div class="brand-menu-wrapper">
-            <a href="/" class="brand-name-logo">
-                <img src="/public/media/icons/logo.png" class="brand-logo" alt="Kitchen trip logo">
-                <span class="brand-name">kitchen trip</span>
+            <div class="brand-menu-left">
+                <a href="/" class="brand-name-logo">
+                    <img src="/public/media/icons/kitchentrip-logo.png" class="brand-logo" alt="Kitchen trip">
+                </a>
                 <span class="brand-desc">キッチン選びから、使い方まで、<br>これからはじまるキッチンの旅をサポートします</span>
-            </a>
+            </div>
     
             <div class="menu">
                 <span class="menu-burger"></span>
@@ -36,11 +37,11 @@
         </div>
 
         <div class="pc-search-bar-wrapper">
-            <span class="kitchentrip-about">kitchen tripについて</span>
+            <a href="/about/"><span class="kitchentrip-about">kitchen tripについて</span></a>
 
             <div class="pc-search-bar">
                 <input type="text" class="pc-search-bar-field" name="pc-search-bar" id="pcSearchBar" placeholder="フリーワード検索">
-                <img src="/public/media/icons/search.png" alt="Search icon" class="pc-search-icon">
+                <img src="/public/media/icons/search.png" alt="" class="pc-search-icon">
             </div>
         </div>
     </header>
@@ -49,43 +50,43 @@
         <div class="sp-search-bar-wrapper">
             <div class="sp-search-bar">
                 <input type="text" class="sp-search-bar-field" name="sp-search-bar" id="spSearchBar" placeholder="フリーワード検索">
-                <img src="/public/media/icons/search.png" alt="Search icon" class="sp-search-icon">
+                <img src="/public/media/icons/search.png" class="sp-search-icon">
             </div>
         </div>
 
         <ul class="menu-nav">
             <li class="menu-nav-item">
-                <a href="index.html" data-category="post" class="menu-nav-link menu-nav-post">
+                <a href="/blog/topic/contribution" data-category="post" class="menu-nav-link menu-nav-post">
                     <img src="/public/media/icons/menu/post.png" class="menu-icon" alt="Post icon">
                     <span class="menu-title">みんなの投稿</span>
                </a>
             </li>
             <li class="menu-nav-item">
-                <a href="index.html" data-category="event" class="menu-nav-link menu-nav-event">
+                <a href="/blog/topic/event" data-category="event" class="menu-nav-link menu-nav-event">
                     <img src="/public/media/icons/menu/event.png" class="menu-icon" alt="Event icon">
                     <span class="menu-title">イベント</span>
                </a>
             </li>
             <li class="menu-nav-item">
-                <a href="index.html" data-category="kitchen" class="menu-nav-link menu-nav-cooking active">
+                <a href="/blog/topic/life" data-category="kitchen" class="menu-nav-link menu-nav-cooking active">
                     <img src="/public/media/icons/menu/cooking.png" class="menu-icon" alt="Cooking icon">
                     <span class="menu-title">くらし・料理</span>
                </a>
             </li>
             <li class="menu-nav-item">
-                <a href="index.html" data-category="care" class="menu-nav-link menu-nav-usage">
+                <a href="/blog/topic/usage" data-category="care" class="menu-nav-link menu-nav-usage">
                     <img src="/public/media/icons/menu/usage.png" class="menu-icon" alt="Usage icon">
                     <span class="menu-title">お手入れ・つかい方</span>
                </a>
             </li>
             <li class="menu-nav-item">
-                <a href="index.html" data-category="storage" class="menu-nav-link menu-nav-storage">
+                <a href="/blog/topic/idea" data-category="storage" class="menu-nav-link menu-nav-storage">
                     <img src="/public/media/icons/menu/storage.png" class="menu-icon" alt="Storage icon">
                     <span class="menu-title">収納アイデア</span>
                </a>
             </li>
             <li class="menu-nav-item">
-                <a href="index.html" data-category="movie" class="menu-nav-link menu-nav-video">
+                <a href="/blog/topic/movie" data-category="movie" class="menu-nav-link menu-nav-video">
                     <img src="/public/media/icons/menu/video.png" class="menu-icon" alt="Video icon">
                     <span class="menu-title">動画でみる</span>
                </a>
@@ -505,22 +506,22 @@
         <div class="footer-nav-links">
             <ul class="footer-nav">
                 <li class="footer-nav-item post-ftr-bg">
-                    <a href="#" class="footer-nav-link post-nav-link" target="_blank">みんなの投稿</a>
+                    <a href="/blog/topic/contribution" class="footer-nav-link post-nav-link" target="_blank">みんなの投稿</a>
                 </li>
                 <li class="footer-nav-item event-ftr-bg">
-                    <a href="#" class="footer-nav-link event-nav-link" target="_blank">イベント</a>
+                    <a href="/blog/topic/event" class="footer-nav-link event-nav-link" target="_blank">イベント</a>
                 </li>
                 <li class="footer-nav-item cooking-ftr-bg">
-                    <a href="#" class="footer-nav-link cooking-nav-link" target="_blank">くらし・料理</a>
+                    <a href="/blog/topic/life" class="footer-nav-link cooking-nav-link" target="_blank">くらし・料理</a>
                 </li>
                 <li class="footer-nav-item care-ftr-bg">
-                    <a href="#" class="footer-nav-link care-nav-link" target="_blank">お手入れ・つかい方</a>
+                    <a href="/blog/topic/usage" class="footer-nav-link care-nav-link" target="_blank">お手入れ・つかい方</a>
                 </li>
                 <li class="footer-nav-item storage-ftr-bg">
-                    <a href="#" class="footer-nav-link storage-nav-link" target="_blank">収納アイデア</a>
+                    <a href="/blog/topic/idea" class="footer-nav-link storage-nav-link" target="_blank">収納アイデア</a>
                 </li>
                 <li class="footer-nav-item video-ftr-bg">
-                    <a href="#" class="footer-nav-link video-nav-link" target="_blank">動画でみる</a>
+                    <a href="/blog/topic/movie" class="footer-nav-link video-nav-link" target="_blank">動画でみる</a>
                 </li>
             </ul>
         </div>
@@ -528,30 +529,29 @@
         <div class="footer-links">
             <div class="ftr-kitchentrip-logo">
                 <a href="/" class="ftr-brand-name">
-                    <img src="/public/media/icons/logo.png" class="ftr-brand-logo" alt="Kitchen trip logo">
-                    <span class="ftr-brand-name">kitchen trip</span>
+                    <img src="/public/media/icons/kitchentrip-logo.png" class="ftr-brand-logo" alt="Kitchen trip logo">
                 </a>
             </div>
             <div class="ftr-cleanup-logo">
                 <span>produced by</span>
-                <img src="/public/media/images/top/cleanup_logo.png" alt="Cleanup logo">
+                <a href="https://cleanup.jp/"><img src="/public/media/images/top/cleanup_logo.png" alt="クリナップ キッチンから、笑顔をつくろう"></a>
             </div>
             <div class="ftr-terms-privacy">
                 <div class="terms-wrapper">
                     <a href="#" class="ftr-t-p ftr-terms" target="_blank">利用規約</a>
                 </div>
                 <div class="privacy-wrapper">
-                    <a href="#" class="ftr-t-p ftr-privacy" target="_blank">個人情報保護方針</a>
+                    <a href="http://cleanup.jp/policy/privacy.shtml" class="ftr-t-p ftr-privacy" target="_blank">個人情報保護方針</a>
                 </div>
             </div>
             <div class="ftr-social-links">
                 <div class="ftr-social">
                     <a href="https://www.facebook.com/Kitchen-trip-113542160491664/" class="ftr-social-link" target="_blank">
-                        <img src="/public/media/icons/socials/facebook_logo.png" class="ftr-social-logo" alt="Facebook logo"></a>
+                        <img src="/public/media/icons/socials/facebook_logo.png" class="ftr-social-logo" alt="Facebook"></a>
                 </div>
                 <div class="ftr-social">
                     <a href="https://www.instagram.com/kitchentrip_cleanup/" class="ftr-social-link" target="_blank">
-                        <img src="/public/media/icons/socials/instagram_logo.png" class="ftr-social-logo" alt="Instagram logo"></a>
+                        <img src="/public/media/icons/socials/instagram_logo.png" class="ftr-social-logo" alt="Instagram"></a>
                 </div>
             </div>
             <div class="ftr-copyright">

@@ -865,7 +865,7 @@ header {
 
 .tag-lists-wrapper .tag-list span {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.05em;
 }
 
@@ -926,7 +926,7 @@ header {
   font-size: 12px;
   color: #777;
   letter-spacing: 0.05em;
-  line-height: 21px;
+  line-height: 1.75;
   margin-bottom: 35px;
 }
 
@@ -1084,7 +1084,7 @@ header {
 }
 
 .article-title {
-  line-height: 45px;
+  line-height: 1.5;
   font-weight: normal;
   font-size: 30px;
   margin: 16px auto;
@@ -1144,7 +1144,7 @@ header {
 h2:not(.transparent) {
   background: url(/public/media/images/h2-bg.png) round;
   font-weight: normal;
-  line-height: 36px;
+  line-height: 1.5;
   width: 112%;
   margin-top: 53px;
   margin-bottom: 25px;
@@ -1282,7 +1282,7 @@ h6 {
 }
 
 .text-tag-wrapper .article-tags .article-tag {
-  line-height: 21px;
+  line-height: 1.75;
   color: #986B6E;
   padding: 2px 10px;
   border: 1px solid #986B6E;
@@ -1504,7 +1504,6 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 11px;
-  line-height: 24px;
 }
 
 .product-wrapper-lg .product-details-lg .product-name-lg {
@@ -1932,7 +1931,7 @@ h6 {
 .terms-title {
   text-align: center;
   font-size: 22px;
-  line-height: 33px;
+  line-height: 1.5;
 }
 
 .terms-details {
@@ -1944,7 +1943,7 @@ h6 {
 
 .terms-details .about-str-terms {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: bold;
   padding-bottom: 9px;
 }
@@ -1955,7 +1954,7 @@ h6 {
 
 .terms-details .about-terms-list {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.75;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

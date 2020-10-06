@@ -512,10 +512,72 @@ h2:not(.transparent) {
         width: 100%;
     }
 
-    @include tablet {
-        height: 120px;
+    @include pc {
+        font-size: 26px;
     }
 }
+
+h3 {
+    @include tablet {
+        background-image: url(/public/media/images/h3-bg.png);
+        background-repeat: round;
+    }
+
+    @include pc {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    @include pc {
+        font-size: 20px;
+    }
+}
+
+h5 {
+    @include pc {
+        font-size: 18px;
+    }
+}
+
+.font-14 {
+    @include pc {
+        font-size: 16px;
+    }
+}
+
+.font-12 {
+    @include pc {
+        font-size: 14px;
+    }
+}
+
+.catch-text {
+    @include pc {
+        font-size: 20px;
+    }
+}
+
+.title-text {
+    @include pc {
+        font-size: 18px;
+    }
+}
+
+.table {
+    @include pc {
+        font-size: 16px;
+
+        thead td,
+        thead th,
+        .thead, 
+        td {
+            padding: 14px;
+        }
+    }
+
+}
+
 
 .share-wrapper {
     @include tablet {
@@ -584,8 +646,13 @@ h2:not(.transparent) {
         @include tablet {
             row-gap: 34px;
             font-size: 18px;
-            line-height: 27px;
             justify-content: center;
+        }
+
+        @include pc {
+            .product-price span {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -613,10 +680,19 @@ h2:not(.transparent) {
     }
 
     .product-details-lg {
+        .product-name-lg {
+            @include pc {
+                font-size: 18px;
+            }
+        }
+
         .product-desc-lg {
             @include tablet {
-                line-height: 1.75px;
                 padding-bottom: 12px;
+            }
+
+            @include pc {
+                font-size: 16px;
             }
         }
 
@@ -662,7 +738,11 @@ h2:not(.transparent) {
     }
 }
 
-
+.str-text {
+    @include pc {
+        font-size: 18px;
+    }
+}
 
 .related-article-wrapper {
 
@@ -738,6 +818,12 @@ h2:not(.transparent) {
     }
 }
 
+.author {
+    @include tablet {
+        padding-top: 30px;
+    }
+}
+
 //about
 .key-visual-about {
     @include tablet {
@@ -774,7 +860,6 @@ h2:not(.transparent) {
         @include tablet {
             text-align: center;
             font-size: 20px;
-            line-height: 40px;
         }
     }
 }
@@ -839,9 +924,11 @@ h2:not(.transparent) {
             align-items: baseline;
             column-gap: 30px;
 
-            .article {
+            a {
                 flex-basis: 250px;
+            }
 
+            .article {
                 .article-date {
                     margin-bottom: 60px;
                 }

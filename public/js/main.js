@@ -47,6 +47,30 @@ $('#backToTop').click(function() {
     }, 500);
 });
 
+$('.tag-list-link').click(function() {
+	let getElem = $(this).attr('href');
+	let targetDistance = 100;
+	if ($(getElem).length) {
+		let getOffset = $(getElem).offset().top;
+		$('html,body').animate({
+			scrollTop: getOffset - targetDistance
+		}, 500);
+	}
+	return false;
+});
+
+$('.ftr-terms').click(function() {
+	let getElem = $(this).attr('href');
+	let targetDistance = 100;
+	if ($(getElem).length) {
+		let getOffset = $(getElem).offset().top;
+		$('html,body').animate({
+			scrollTop: getOffset - targetDistance
+		}, 500);
+	}
+	return false;
+});
+
 //keyvisual category object
 const categoryKV = {
 	'post': {

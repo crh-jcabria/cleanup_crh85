@@ -15,7 +15,7 @@
 }
 
 .lh-28 {
-    line-height: 1.75;
+    line-height: 2;
 }
 
 .font-14 {
@@ -102,30 +102,31 @@
 
 h2:not(.transparent) {
     background: url(/public/media/images/h2-bg.png) round;
-    height: 142px;
     font-weight: normal;
     line-height: 36px;
-    padding: 0 20px;
     width: 112%;
     margin-top: 53px;
     margin-bottom: 25px;
     display: grid;
     align-content: center;
+    height: auto;
+    padding: 24px 20px;
+    background-size: cover;
 }
 
-.hl-text {
-    background: url(/public/media/images/highlight-text.png) no-repeat bottom;
+strong {
+    background: url(/public/media/images/highlight-text.png) repeat-x bottom;
     padding-bottom: 2px;
 }
 
 h3 {
-    background: url(/public/media/images/h3-bg.png) no-repeat;
+    background: url(/public/media/images/h3-bg-sp.png) round;
     background-size: cover;
-    height: 86px;
+    height: auto;
     font-size: 22px;
     font-weight: normal;
-    line-height: 44px;
-    padding: 0 20px;    
+    line-height: 1.5;
+    padding: 24px 20px;    
     margin-top: 36px;
     margin-bottom: 15px;
     width: 100%;
@@ -135,7 +136,7 @@ h3 {
 
 h4 {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
     font-weight: bold;
     margin: 18px auto;
     display: inline-flex;
@@ -153,19 +154,19 @@ h4 {
 
 h5 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     margin: 28px auto 13px auto;
     width: 100%;
 }
 
 h6 {
-    line-height: 21px;
+    line-height: 1.5;
     margin: 29px auto 9px auto;
     width: 100%;
 }
 
 .light-text {
-    line-height: 21px;
+    line-height: 1.75;
     color: #666;
     margin: 9px auto 18px auto;
 }
@@ -180,7 +181,7 @@ h6 {
 
 .lp-bullet {
     margin: 17px 20px;
-    line-height: 24px;
+    line-height: 1.75;
 
     .light-pink-bullet {
         list-style-image: url('/public/media/images/lp-bullet.png');
@@ -193,12 +194,12 @@ h6 {
 
 .number-list {
     margin: 17px 20px;
-    line-height: 24px;
+    line-height: 1.75;
 }
 
 .number-bullet {
     margin-top: 18px;
-    line-height: 21px;
+    line-height: 1.75;
     color: #666;
     margin-bottom: 6px;
 
@@ -238,7 +239,7 @@ h6 {
 
 .arrow-list-wrapper {
     margin: 5px auto;
-    line-height: 24px;
+    line-height: 1.75;
 
     .arrow-list {
         display: inline-flex;
@@ -255,14 +256,14 @@ h6 {
     margin-top: 65px;
     font-size: 18px;
     font-weight: bold;
-    line-height: 27px;
+    line-height: 1.5;
 }
 
 .title-text {
     margin-top: 46px;
     font-size: 16px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .table {
@@ -284,6 +285,10 @@ h6 {
         td:not(.thead) {
             text-align: center;
         }
+
+        thead tr {
+            background: #F4EFF0;
+        }
     }
 
     width: 100%;
@@ -292,7 +297,7 @@ h6 {
     border: 1px solid transparent;
     border-collapse: collapse;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.75;
     letter-spacing: 0.05em;
     margin-bottom: 42px;
 
@@ -304,18 +309,14 @@ h6 {
     thead td,
     thead th,
     .thead {
-        padding: 4px 10px;
+        padding: 12px;
     }
 
     td {
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
-        padding: 4px 10px;
+        padding: 12px;
         text-align: left;
-    }
-
-    tr:hover {
-        background-color: #e5e5e5;
     }
 }
 
@@ -332,7 +333,7 @@ h6 {
     .dummy-post-light {
         margin: 16px auto;
         color: #666;
-        line-height: 21px;
+        line-height: 1.75;
     }
 }
 
@@ -352,7 +353,7 @@ h6 {
 
 .str-text {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     font-weight: bold;
     margin-bottom: 13px;
 }
@@ -385,7 +386,7 @@ h6 {
         font-size: 14px;
         font-weight: bold;
         color: #666;
-        line-height: 21px;
+        line-height: 1.5;
 
         .product-specs {
             align-self: flex-start;
@@ -396,7 +397,6 @@ h6 {
 
             span {
                 font-size: 12px;
-                line-height: 18px;
                 font-weight: normal;
             }
         } 
@@ -428,13 +428,14 @@ h6 {
         line-height: 24px;
 
         .product-name-lg {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
-            line-height: 27px;
+            line-height: 1.5;
         }
 
         .product-desc-lg {
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 1.75;
         }
 
         .product-buy-link {
@@ -447,7 +448,7 @@ h6 {
             color: white;
             font-size: 14px;
             font-weight: normal;
-            line-height: 21px;
+            line-height: 1.5;
             letter-spacing: 0.05em;
             display: flex;
             justify-content: flex-end;
@@ -470,7 +471,7 @@ h6 {
     margin: 0 0 85px;
 
     @media (max-width: 480px) {
-        padding: 0 30px;
+        padding: 25px 30px;
         margin: 0 0 60px;
     }
 
@@ -481,6 +482,8 @@ h6 {
         font-weight: 700;
         margin: 0;
         padding: 0;
+        line-height: 1.5;
+        padding-bottom: 25px;
     }
 
     .author_image {
@@ -493,8 +496,18 @@ h6 {
     .author_desc {
         margin: 0 0 35px;
 
+        p {
+            line-height: 1.75;
+        }
+
         a {
             text-decoration: underline;
+            color: $primary-color;
+        }
+
+        h3 {
+            padding: 16px 0 21px 0;
+            line-height: 1.5;
         }
     }
 }
@@ -609,7 +622,7 @@ h6 {
 
         span {
             font-size: 22px;
-            line-height: 33px;
+            line-height: 1.5;
             letter-spacing: 0.05em;
             background-color: white;
             padding: 5px 20px;
@@ -618,10 +631,12 @@ h6 {
 
     .related-articles {
         margin-bottom: 23px;
+        line-height: 1.75;
     }
 
     .related-article {
         padding: 12px 0;
+        color: $primary-color;
 
         .article-img {
             height: 224px;
@@ -643,6 +658,10 @@ h6 {
             border: 1px solid $dark-pink;
             display: inline-block;
             margin: 10px auto;
+        }
+
+        .article-desc {
+            line-height: 1.75;
         }
 
         .article-date {

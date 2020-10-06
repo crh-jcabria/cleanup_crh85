@@ -16,6 +16,7 @@
 
 .content-image {
     width: 100%;
+    margin-top: 15px;
 }
 
 .content-title {
@@ -35,15 +36,6 @@
     line-height: 2;
     text-align: left;
     color: $primary-color;
-}
-
-.asterisk {
-    display: inline-grid;
-    vertical-align: middle;
-    font-family: $brand-font;
-    padding-top: 8px;
-    font-weight: normal;
-    font-size: 26px;
 }
 
 .see-details-wrapper {

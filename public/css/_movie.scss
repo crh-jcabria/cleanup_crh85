@@ -54,6 +54,18 @@
             letter-spacing: 0.05em;
         }
     }
+
+    .tag-list-link {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+.tag-list-title {
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
 }
 
 .care-wrapper,

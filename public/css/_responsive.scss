@@ -543,12 +543,14 @@ h1 + div {
         }
     }
 
-    & > h3 {
+    h3:not(.author-h3)  {
         @include tablet {
             background-image: url(/public/media/images/h3-bg.png);
             background-repeat: round;
         }
-
+    }
+     
+    h3 {
         @include pc {
             font-size: 24px;
             margin-top: 42px;

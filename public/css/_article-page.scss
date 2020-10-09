@@ -67,9 +67,12 @@ h1 {
         background-size: cover;
     }
 
-    & > h3 {
+    h3:not(.author-h3) {
         background: url(/public/media/images/h3-bg-sp.png) round;
         background-size: cover;
+    }
+
+    h3 {
         height: auto;
         font-size: 22px;
         font-weight: normal;
@@ -527,7 +530,7 @@ h1 {
         margin: 0 0 60px;
     }
 
-    h3 {
+    h3.author-h3 {
         background: none;
         font-size: 18px;
         text-align: center;
@@ -557,7 +560,7 @@ h1 {
             color: $primary-color;
         }
 
-        h3 {
+        h3.author-h3 {
             padding: 16px 0 21px 0;
             line-height: 1.5;
         }

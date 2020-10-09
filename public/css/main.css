@@ -1099,9 +1099,12 @@ h1 + div {
   background-size: cover;
 }
 
-.articles-list-wrapper > h3 {
+.articles-list-wrapper h3:not(.author-h3) {
   background: url(/public/media/images/h3-bg-sp.png) round;
   background-size: cover;
+}
+
+.articles-list-wrapper h3 {
   height: auto;
   font-size: 22px;
   font-weight: normal;
@@ -1601,7 +1604,7 @@ h1 + div {
   }
 }
 
-.author h3 {
+.author h3.author-h3 {
   background: none;
   font-size: 18px;
   text-align: center;
@@ -1641,7 +1644,7 @@ h1 + div {
   color: #444444;
 }
 
-.author .author_desc h3 {
+.author .author_desc h3.author-h3 {
   padding: 16px 0 21px 0;
   line-height: 1.5;
 }
@@ -2659,14 +2662,14 @@ body {
 }
 
 @media (min-width: 768px) {
-  .articles-list-wrapper > h3 {
+  .articles-list-wrapper h3:not(.author-h3) {
     background-image: url(/public/media/images/h3-bg.png);
     background-repeat: round;
   }
 }
 
 @media (min-width: 1024px) {
-  .articles-list-wrapper > h3 {
+  .articles-list-wrapper h3 {
     font-size: 24px;
     margin-top: 42px;
     margin-bottom: 5px;

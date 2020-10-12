@@ -516,13 +516,13 @@ h1 + div {
 }
 
 .articles-list-wrapper {
-    & > p:not(.small):not(.catch-text):not(.title-text) {
+    p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
         @include pc {
             font-size: 16px;
             margin-top: 27px;
             margin-bottom: 10px;
 
-            & + p:not(.small):not(.catch-text):not(.title-text) {
+            & + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
                 margin-top: 16px;
             }
         }
@@ -593,20 +593,20 @@ h1 + div {
         }
     }
     
-    & > ul {
+    ul {
         @include pc {
             font-size: 16px;
             margin-top: 15px;
         }
 
-        & > li {
+        & > li:not(.pagination-li) {
             @include pc {
                 padding-bottom: 10px;
             }
         }
     }
 
-    & > ol {
+    ol {
         @include pc {
             font-size: 16px;
             margin-top: 15px;
@@ -632,7 +632,7 @@ h1 + div {
         }
     }
     
-    & > .article-tags {
+    .article-tags {
         @include pc {
             margin-top: 8px;
         }
@@ -644,7 +644,7 @@ h1 + div {
         }
     }
 
-    & > .arrow-list-style {
+    .arrow-list-style {
         @include pc {
             font-size: 16px;
             margin-top: 15px;
@@ -688,7 +688,7 @@ h1 + div {
         }
     }
 
-    & > img {
+    img:not(.arrows):not(.carousel-img):not(.product-img):not(.product-btn):not(.author-img):not(.article-col-img) {
         @include pc {
             margin-top: 20px;
         }

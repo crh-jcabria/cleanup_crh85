@@ -39,14 +39,14 @@ h1 {
 .articles-list-wrapper {
     width: 100%;
     
-    & > p:not(.small):not(.catch-text):not(.title-text) {
+    p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
         font-size: 14px;
         letter-spacing: 0.05em;
         line-height: 2;
         margin-top: 18px;
         margin-bottom: 9px;
 
-        & + p:not(.small):not(.catch-text):not(.title-text) {
+        & + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
             margin-top: 8px;
         }
     }
@@ -136,7 +136,6 @@ h1 {
         line-height: 1.75;
         letter-spacing: 0.05em;
         color: #666;
-        padding-left: 20px;
 
         & > ul {
             list-style-image: url('/public/media/images/asterisk-list-style.png');
@@ -147,21 +146,21 @@ h1 {
         }
     }
 
-    & > ul {
+    ul:not(.custom-list) {
         font-size: 14px;
         letter-spacing: 0.05em;
         margin: 8px 20px 2px;
         line-height: 1.75;
         list-style-image: url('/public/media/images/lp-bullet.png');
           
-        & > li { 
+        & > li:not(.pagination-li) { 
             padding-left: 3px; 
             padding-bottom: 8px;
         }
 
     }
 
-    & > ol {
+    ol:not(.custom-list) {
         font-size: 14px;
         letter-spacing: 0.05em;
         margin: 8px 20px 2px;
@@ -191,7 +190,7 @@ h1 {
         }
     }
 
-    & > .article-tags {
+    .article-tags {
         display: inline-flex;
         width: 100%;
         flex-wrap: wrap;
@@ -214,7 +213,7 @@ h1 {
         }
     }
 
-    & > .arrow-list-style {
+    .arrow-list-style {
         font-size: 14px;
         letter-spacing: 0.05em;
         line-height: 1.75;
@@ -312,7 +311,7 @@ h1 {
         }
     }
 
-    & > img {
+    img:not(.arrows):not(.carousel-img):not(.product-img):not(.product-btn):not(.author-img):not(.article-col-img) {
         height: 100%;
         width: 100%;
         object-fit: cover;

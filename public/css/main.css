@@ -1172,6 +1172,7 @@ h1 + div {
   line-height: 1.75;
   letter-spacing: 0.05em;
   color: #666;
+  padding-left: 20px;
 }
 
 .articles-list-wrapper .asterisk-list-style > ul {

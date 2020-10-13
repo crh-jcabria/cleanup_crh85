@@ -2967,7 +2967,7 @@ body {
 
 @media (min-width: 768px) {
   .product-wrapper .product-details {
-    row-gap: 34px;
+    row-gap: 20px;
     font-size: 18px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

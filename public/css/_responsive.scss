@@ -695,17 +695,18 @@ h1 + div {
     }
 
     .swiper-container.swiper-container-article {
-        @include pc {
-            margin-top: 22px;
-            margin-bottom: 96px;
-        }
-    
         @include mobile-l {
-            height: 310px;
+            height: 340px;
         }
     
         @include tablet {
-            height: 550px;
+            height: 425px;
+        }
+
+        @include pc {
+            margin-top: 22px;
+            margin-bottom: 96px;
+            height: 410px;
         }
     
         .swiper-button-next.swiper-button-next-article{

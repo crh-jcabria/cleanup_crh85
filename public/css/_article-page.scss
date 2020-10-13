@@ -359,16 +359,22 @@ h1 {
 
     .swiper-container.swiper-container-article {
         margin-top: 14px;
-        height: 270px;
+        height: 325px;
         margin-bottom: 79px;
     
         .swiper-button-next.swiper-button-next-article,
         .swiper-button-prev.swiper-button-prev-article {
-            top: 92%;
+            top: 93.5%;
         }
     
         .swiper-button-next.swiper-button-next-article {
             right: 19%;
+        }
+
+        .swiper-slide.swiper-slide-article img {
+            height: 280px;
+            object-fit: contain;
+            width: 100%;
         }
     }
     

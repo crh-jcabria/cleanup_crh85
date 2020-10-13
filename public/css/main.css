@@ -1393,17 +1393,24 @@ h1 + div {
 
 .articles-list-wrapper .swiper-container.swiper-container-article {
   margin-top: 14px;
-  height: 270px;
+  height: 325px;
   margin-bottom: 79px;
 }
 
 .articles-list-wrapper .swiper-container.swiper-container-article .swiper-button-next.swiper-button-next-article,
 .articles-list-wrapper .swiper-container.swiper-container-article .swiper-button-prev.swiper-button-prev-article {
-  top: 92%;
+  top: 93.5%;
 }
 
 .articles-list-wrapper .swiper-container.swiper-container-article .swiper-button-next.swiper-button-next-article {
   right: 19%;
+}
+
+.articles-list-wrapper .swiper-container.swiper-container-article .swiper-slide.swiper-slide-article img {
+  height: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
 }
 
 .articles-list-wrapper strong {
@@ -2809,22 +2816,23 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
-  .articles-list-wrapper .swiper-container.swiper-container-article {
-    margin-top: 22px;
-    margin-bottom: 96px;
-  }
-}
-
 @media (min-width: 425px) {
   .articles-list-wrapper .swiper-container.swiper-container-article {
-    height: 310px;
+    height: 340px;
   }
 }
 
 @media (min-width: 768px) {
   .articles-list-wrapper .swiper-container.swiper-container-article {
-    height: 550px;
+    height: 425px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles-list-wrapper .swiper-container.swiper-container-article {
+    margin-top: 22px;
+    margin-bottom: 96px;
+    height: 410px;
   }
 }
 

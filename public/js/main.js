@@ -8,7 +8,8 @@ const keyVisual = document.querySelector('.key-visual');
 const kvIcon = document.querySelector('.kv-icon');
 const kvTitle = document.querySelector('.kv-title');
 const kvDesc = document.querySelector('.kv-desc');
-
+const article = document.querySelectorAll('.article');
+const articlesWrapper = document.querySelector('.articles-list');
 
 let showMenu = false;
 hamburgerText.innerHTML = 'Menu';
@@ -147,4 +148,10 @@ menuNavLinks.forEach(menuLinks => {
     menuLinks.addEventListener('click', handleClick);
 	menuLinks.addEventListener('click', handleKeyVisual);
 	menuLinks.addEventListener('click', toggleNav);
+});
+
+[article].filter(articleDiv => {
+	if (articleDiv.length < 4) {
+		articlesWrapper.classList.add('flex-start');
+	}
 });

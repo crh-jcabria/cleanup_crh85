@@ -1464,6 +1464,10 @@ h1 + div {
   padding-top: 6px;
 }
 
+.product-cta {
+  width: 100%;
+}
+
 .product-wrapper {
   background: url(/public/media/images/product-bg.png) repeat;
   height: 86px;
@@ -1554,6 +1558,7 @@ h1 + div {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 11px;
+  color: #444444;
 }
 
 .product-wrapper-lg .product-details-lg .product-name-lg {
@@ -2564,6 +2569,14 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .articles-wrapper .articles-list.flex-start {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @media (min-width: 425px) {
   .articles-wrapper .articles-list {
     margin: auto 40px;
@@ -2583,10 +2596,9 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
   }
   .articles-wrapper .articles-list .article {
+    margin-right: 30px;
     -ms-flex-preferred-size: 250px;
         flex-basis: 250px;
   }
@@ -3225,12 +3237,13 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
   }
   .movie-lists-wrapper .articles-list.tag-articles-list a {
     -ms-flex-preferred-size: 250px;
         flex-basis: 250px;
+  }
+  .movie-lists-wrapper .articles-list.tag-articles-list .article {
+    margin-right: 30px;
   }
   .movie-lists-wrapper .articles-list.tag-articles-list .article .article-date {
     margin-bottom: 60px;

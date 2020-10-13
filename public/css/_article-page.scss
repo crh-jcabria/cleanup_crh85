@@ -578,6 +578,11 @@ h1 {
     }
 }
 
+.pagination-wrapper {
+    display: inline-grid;
+    justify-items: center;
+}
+
 .pagination {
     position: relative;
     width: 346px;

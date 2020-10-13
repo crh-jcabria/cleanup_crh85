@@ -1661,6 +1661,12 @@ h1 + div {
   line-height: 1.5;
 }
 
+.pagination-wrapper {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  justify-items: center;
+}
+
 .pagination {
   position: relative;
   width: 346px;

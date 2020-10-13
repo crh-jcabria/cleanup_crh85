@@ -1662,8 +1662,8 @@ h1 + div {
 }
 
 .pagination-wrapper {
-  display: -ms-inline-grid;
-  display: inline-grid;
+  display: -ms-grid;
+  display: grid;
   justify-items: center;
 }
 

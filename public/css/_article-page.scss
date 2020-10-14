@@ -173,21 +173,21 @@ h1 {
         }
     }
 
-    .asterisk-with-number-list-style {
+    .number-bullet {
         font-size: 12px;
         letter-spacing: 0.05em;
         margin-top: 9px;
         line-height: 1.75;
         color: #666;
-
-        & > ol > div {
-            display: inline-grid;
-            grid-template-columns: auto auto;
-            column-gap: 22px;
-        }
         
-        & > ol > div > li {
-            margin-bottom: 6px;
+    
+        .list-asterisk {
+            display: inline-flex;
+    
+            .nb-left {
+                margin-right: 9px;
+                margin-bottom: 6px;
+            }
         }
     }
 

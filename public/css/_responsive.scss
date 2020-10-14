@@ -625,15 +625,17 @@ h1 + div {
         }
     }
 
-    .asterisk-with-number-list-style {
+    .number-bullet {
         @include pc {
             margin-top: 18px;
             font-size: 14px;
         }
 
-        & > ol > div > li {
-            @include pc {
-                margin-bottom: 8px;
+        .list-asterisk {
+            .nb-left {
+                @include pc {
+                    margin-bottom: 8px;
+                }
             }
         }
     }

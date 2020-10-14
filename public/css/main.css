@@ -1208,7 +1208,7 @@ h1 + div {
   padding-bottom: 8px;
 }
 
-.articles-list-wrapper .asterisk-with-number-list-style {
+.articles-list-wrapper .number-bullet {
   font-size: 12px;
   letter-spacing: 0.05em;
   margin-top: 9px;
@@ -1216,16 +1216,14 @@ h1 + div {
   color: #666;
 }
 
-.articles-list-wrapper .asterisk-with-number-list-style > ol > div {
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -webkit-column-gap: 22px;
-          column-gap: 22px;
+.articles-list-wrapper .number-bullet .list-asterisk {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.articles-list-wrapper .asterisk-with-number-list-style > ol > div > li {
+.articles-list-wrapper .number-bullet .list-asterisk .nb-left {
+  margin-right: 9px;
   margin-bottom: 6px;
 }
 
@@ -2763,14 +2761,14 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .articles-list-wrapper .asterisk-with-number-list-style {
+  .articles-list-wrapper .number-bullet {
     margin-top: 18px;
     font-size: 14px;
   }
 }
 
 @media (min-width: 1024px) {
-  .articles-list-wrapper .asterisk-with-number-list-style > ol > div > li {
+  .articles-list-wrapper .number-bullet .list-asterisk .nb-left {
     margin-bottom: 8px;
   }
 }

@@ -39,14 +39,14 @@ h1 {
 .articles-list-wrapper {
     width: 100%;
     
-    p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+    p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
         font-size: 14px;
         letter-spacing: 0.05em;
         line-height: 2;
         margin-top: 18px;
         margin-bottom: 9px;
 
-        & + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+        & + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
             margin-top: 8px;
         }
     }
@@ -57,7 +57,7 @@ h1 {
         font-weight: normal;
         line-height: 1.5;
         letter-spacing: 0.05em;
-        width: 112%;
+        width: 100%;
         margin-top: 44px;
         margin-bottom: 7px;
         display: grid;
@@ -319,6 +319,7 @@ h1 {
         object-fit: cover;
         margin-top: 40px;
         margin-bottom: 5px;
+        max-width: 100%;
     }
 
     .article-two-col-wrapper-1 {

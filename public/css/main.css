@@ -1069,7 +1069,7 @@ h1 + div {
   width: 100%;
 }
 
-.articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+.articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
   font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 2;
@@ -1077,7 +1077,7 @@ h1 + div {
   margin-bottom: 9px;
 }
 
-.articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+.articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
   margin-top: 8px;
 }
 
@@ -1087,7 +1087,7 @@ h1 + div {
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.05em;
-  width: 112%;
+  width: 100%;
   margin-top: 44px;
   margin-bottom: 7px;
   display: -ms-grid;
@@ -1354,6 +1354,7 @@ h1 + div {
      object-fit: cover;
   margin-top: 40px;
   margin-bottom: 5px;
+  max-width: 100%;
 }
 
 .articles-list-wrapper .article-two-col-wrapper-1 {
@@ -2657,19 +2658,13 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+  .articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
     font-size: 16px;
     margin-top: 27px;
     margin-bottom: 10px;
   }
-  .articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+  .articles-list-wrapper p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
     margin-top: 16px;
-  }
-}
-
-@media (max-width: 320px) {
-  .articles-list-wrapper h2:not(.transparent) {
-    width: 114%;
   }
 }
 

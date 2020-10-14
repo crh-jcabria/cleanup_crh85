@@ -522,23 +522,19 @@ h1 + div {
 }
 
 .articles-list-wrapper {
-    p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+    p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
         @include pc {
             font-size: 16px;
             margin-top: 27px;
             margin-bottom: 10px;
 
-            & + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p) {
+            & + p:not(.small):not(.catch-text):not(.title-text):not(.tags):not(.col-p):not(.product-specs):not(.product-price):not(.product-name-lg):not(.product-desc-lg) {
                 margin-top: 16px;
             }
         }
     }
     
     h2:not(.transparent) {
-        @include mobile-s {
-            width: 114%;
-        }
-    
         @include mobile-l {
             width: 100%;
         }

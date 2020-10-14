@@ -1045,7 +1045,7 @@ header {
 }
 
 .article-img {
-  width: 112%;
+  max-width: 100%;
   padding-bottom: 16px;
 }
 
@@ -2630,12 +2630,6 @@ body {
 @media (min-width: 959px) {
   .article-wrapper {
     padding: 0;
-  }
-}
-
-@media (max-width: 320px) {
-  .article-img {
-    width: 114%;
   }
 }
 

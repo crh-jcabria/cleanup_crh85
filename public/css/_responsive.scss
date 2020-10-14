@@ -500,10 +500,6 @@ header {
 }
 
 .article-img {
-    @include mobile-s {
-        width: 114%;
-    }
-
     @include mobile-l {
         width: 100%;
     }

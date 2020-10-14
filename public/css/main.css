@@ -2679,6 +2679,7 @@ body {
   .articles-list-wrapper h3:not(.author-h3) {
     background-image: url(/public/media/images/h3-bg.png);
     background-repeat: round;
+    background-size: cover;
   }
 }
 

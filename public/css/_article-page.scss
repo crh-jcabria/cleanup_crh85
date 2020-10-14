@@ -185,6 +185,7 @@ h1 {
             display: inline-flex;
     
             .nb-left {
+                flex-shrink: 0;
                 margin-right: 9px;
                 margin-bottom: 6px;
             }

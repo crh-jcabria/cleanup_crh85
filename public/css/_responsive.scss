@@ -966,13 +966,16 @@ h1 + div {
 
 .see-articles-wrapper {
     @include tablet {
-        width: unset;
+        width: auto;
+        max-width: fit-content;
     }
 }
 
 .about-banner {
     @include tablet {
         width: 540px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

@@ -1889,7 +1889,7 @@ h1 + div {
 
 .see-articles-wrapper .see-articles span {
   margin-right: 30px;
-  width: 246px;
+  max-width: 246px;
   text-align: center;
 }
 
@@ -3112,13 +3112,18 @@ body {
 
 @media (min-width: 768px) {
   .see-articles-wrapper {
-    width: unset;
+    width: auto;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 
 @media (min-width: 768px) {
   .about-banner {
     width: 540px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

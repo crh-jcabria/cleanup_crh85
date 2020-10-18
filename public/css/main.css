@@ -2369,6 +2369,14 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .divider-wrapper,
+  .divider-wrapper-about {
+    max-width: 1164px;
+    margin: auto;
+  }
+}
+
 @media (max-width: 320px) {
   .divider-img-sp {
     width: 92%;
@@ -2386,6 +2394,12 @@ body {
     display: block;
     margin: 30px 13px;
     width: 92%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .divider-img-pc {
+    width: 100%;
   }
 }
 

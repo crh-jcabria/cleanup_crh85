@@ -264,6 +264,14 @@ header {
 }
 
 //divider
+.divider-wrapper,
+.divider-wrapper-about {
+    @include pc-xl {
+        max-width: 1164px;
+        margin: auto;
+    }
+}
+
 .divider-img-sp {
     @include mobile-s {
         width: 92%;
@@ -272,9 +280,6 @@ header {
     @include mobile-xl {
         display: none;
     }
-
-    @include pc {
-    }
 }
 
 .divider-img-pc {
@@ -282,6 +287,10 @@ header {
         display: block;
         margin: 30px 13px;
         width: 92%;
+    }
+
+    @include pc-xl {
+        width: 100%;
     }
 }
 

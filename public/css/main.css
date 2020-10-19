@@ -157,6 +157,7 @@ header {
           justify-content: center;
   text-align: center;
   overflow: hidden;
+  font-family: fot-tsukuardgothic-std, sans-serif;
 }
 
 .menu-nav li {
@@ -292,7 +293,7 @@ header {
 }
 
 .content-desc {
-  padding: 22px 10px;
+  padding: 22px 0;
   font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 2;
@@ -380,7 +381,7 @@ header {
 }
 
 .footer-nav-links {
-  padding: 52px 20px;
+  padding: 80px 20px 70px 20px;
 }
 
 .footer-nav {
@@ -842,7 +843,7 @@ header {
 
 .tag-lists-wrapper {
   background: url(/public/media/images/tag-list-bg.png);
-  padding: 20px;
+  padding: 36px 20px;
   margin-top: 40px;
   background-size: cover;
 }
@@ -1062,6 +1063,7 @@ h1 + div {
   text-align: left;
   width: 100%;
   font-size: 12px;
+  line-height: 2;
   letter-spacing: 0.05em;
 }
 
@@ -1095,7 +1097,7 @@ h1 + div {
   -ms-flex-line-pack: center;
       align-content: center;
   height: auto;
-  padding: 24px 20px;
+  padding: 36px 20px;
   background-size: cover;
 }
 
@@ -1943,6 +1945,7 @@ h1 + div {
 .about-details-wrapper .about-details {
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.05em;
 }
 
 .about-details-wrapper .break-line {
@@ -2008,6 +2011,12 @@ h1 + div {
   line-height: 1.5;
   font-weight: bold;
   padding-bottom: 9px;
+  letter-spacing: 0.05em;
+}
+
+.terms-details .lh-28 {
+  font-size: 14px;
+  line-height: 2;
 }
 
 .terms-details .about-terms {
@@ -2151,6 +2160,12 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  header .pc-search-bar-wrapper .pc-search-bar-field {
+    width: 250px;
+  }
+}
+
 @media (min-width: 1024px) {
   .nav {
     display: block;
@@ -2185,6 +2200,14 @@ body {
   .nav .menu-nav li {
     width: auto;
     height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav .menu-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -2227,6 +2250,7 @@ body {
 @media (min-width: 1025px) {
   .swiper-container {
     height: 100%;
+    padding-bottom: 60px;
   }
 }
 
@@ -2346,9 +2370,17 @@ body {
   }
   .content .content-desc {
     font-size: 16px;
+    max-width: 440px;
+    margin: auto;
   }
   .content .content-icon {
-    margin-bottom: 6px;
+    width: 85px;
+    height: 60px;
+    margin: auto auto 6px auto;
+  }
+  .content .content-icon img {
+    width: 100%;
+    height: 100%;
   }
   .content .content-image {
     margin-top: 20px;
@@ -2358,6 +2390,7 @@ body {
 @media (min-width: 1200px) {
   .content {
     padding: 40px 0;
+    margin: unset;
   }
 }
 
@@ -2470,6 +2503,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .footer-nav {
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+    row-gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
   .footer-nav .footer-nav-item {
     height: 108px;
     width: 280px;
@@ -2533,7 +2574,7 @@ body {
 
 @media (min-width: 1024px) {
   .ftr-terms-privacy {
-    width: 20%;
+    width: 22%;
   }
 }
 
@@ -2587,6 +2628,7 @@ body {
 @media (min-width: 1024px) {
   .articles-wrapper .list-title {
     font-size: 24px;
+    margin: 74px auto;
   }
 }
 
@@ -2686,6 +2728,7 @@ body {
   .articles-list-wrapper h2:not(.transparent) {
     font-size: 26px;
     margin-top: 62px;
+    padding: 46px 24px;
   }
 }
 
@@ -2937,6 +2980,7 @@ body {
 
 @media (min-width: 1024px) {
   .share-wrapper {
+    margin-top: 30px;
     margin-bottom: 14px;
   }
 }
@@ -3150,6 +3194,7 @@ body {
 @media (min-width: 768px) {
   .key-visual-about {
     background: url(/public/media/images/about/about_titleBg_pc.png);
+    height: 360px;
   }
   .key-visual-about .kv-about-wrapper-pc {
     display: block;
@@ -3173,7 +3218,7 @@ body {
 
 @media (min-width: 959px) {
   .about-details-wrapper {
-    max-width: 710px;
+    max-width: 752px;
     margin: auto;
   }
 }
@@ -3217,6 +3262,20 @@ body {
 @media (min-width: 768px) {
   .about-terms-wrapper .terms-details {
     margin-bottom: 120px;
+    padding: 37px 40px;
+    margin-top: 53px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-terms-wrapper .terms-details .about-str-terms {
+    font-size: 18px;
+  }
+  .about-terms-wrapper .terms-details .lh-28 {
+    font-size: 16px;
+  }
+  .about-terms-wrapper .terms-details .about-terms-list {
+    font-size: 16px;
   }
 }
 
@@ -3230,6 +3289,7 @@ body {
   .movie-lists-wrapper .tag-lists-wrapper {
     max-width: 540px;
     margin: 60px auto auto auto;
+    padding: 36px 30px;
   }
 }
 

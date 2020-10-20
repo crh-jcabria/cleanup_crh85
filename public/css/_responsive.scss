@@ -39,7 +39,7 @@ header {
         @include pc {
             display: inline-flex;
             align-items: baseline;
-            padding: 20px 28px 20px 20px;
+            padding: 31px 28px 20px 20px;
             font-size: 14px;
             color: $primary-color;
         }
@@ -293,6 +293,14 @@ header {
     }
 }
 
+.divider-wrapper-about {
+    @include tablet {
+        .divider-img-pc {
+            padding-bottom: 19px;
+        }
+    }
+}
+
 .divider-img-sp {
     @include mobile-s {
         width: 92%;
@@ -384,6 +392,20 @@ header {
     }
 }
 
+.ftr-brand-name {
+    @include pc {
+        width: 321px;
+        height: 90px;
+        margin: auto;
+
+        .ftr-brand-logo {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
 .post-ftr-bg {
     @include pc {
         background: url(../media/images/top/post-bg-pc.png);
@@ -436,6 +458,7 @@ header {
 
     @include pc {
         width: 22%;
+        margin-bottom: 25px;
     }
 
     .terms-wrapper {
@@ -457,7 +480,6 @@ header {
     }
 
     @include pc {
-        height: 200px;
         background-size: contain;
         background-repeat: repeat-x;
     }
@@ -495,8 +517,20 @@ header {
 
     .articles-list {
         &.flex-start {
-            @include pc {
+            @include tablet {
                 justify-content: flex-start;
+                max-width: 590px;
+                margin: auto;
+                padding-left: 30px;
+            }
+
+            @include pc {
+                max-width: 870px;
+            }
+
+            @include pc-xl {
+                max-width: 1160px;
+                padding-left: 0;
             }
         }
 
@@ -1066,7 +1100,7 @@ h1 + div {
 
 .about-btn-wrapper {
     @include tablet {
-        margin-bottom: 120px;
+        margin-bottom: 110px;
     }
 
     .about-btn {

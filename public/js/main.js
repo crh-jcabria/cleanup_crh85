@@ -150,8 +150,24 @@ menuNavLinks.forEach(menuLinks => {
 	menuLinks.addEventListener('click', toggleNav);
 });
 
-[article].filter(articleDiv => {
-	if (articleDiv.length < 4) {
-		articlesWrapper.classList.add('flex-start');
-	}
+
+[articlesWrapper].filter(eachArticleList => {
+	[eachArticleList].filter(articleList => {
+		if (articleList.length === 1) {
+		[article].filter(eachArticle => {
+			if ((eachArticle.length < 4) || ((eachArticle.length % 4) != 0)) {
+				document.querySelector('.articles-list').classList.add('flex-start'); 
+			}
+		});
+		} else {
+		[article].filter(eachArticle => {
+			if ((eachArticle.length < 4) || ((eachArticle.length % 4) != 0)) {
+			document.querySelectorAll('.articles-list').forEach(perDiv => {
+				perDiv.classList.add('flex-start');
+			});
+			}
+		});
+
+		}
+	});
 });

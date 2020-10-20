@@ -129,7 +129,7 @@ header {
 }
 
 .nav {
-  margin: 40px auto;
+  margin: 30px auto;
   display: none;
   position: fixed;
   top: 0;
@@ -495,11 +495,11 @@ header {
 .ftr-cleanup-logo img {
   width: 142px;
   height: 56px;
-  margin: 16px auto;
+  margin-top: 16px;
 }
 
 .ftr-terms-privacy {
-  margin: 60px auto 40px auto;
+  margin: 60px auto 25px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1953,7 +1953,7 @@ h1 + div {
 }
 
 .about-btn-wrapper {
-  margin: 0 20px 94px;
+  margin: 0 20px 73px;
 }
 
 .about-btn-wrapper .about-btn {
@@ -1985,7 +1985,7 @@ h1 + div {
 
 .divider-wrapper-about .divider-img-sp,
 .divider-wrapper-about .divider-img-pc {
-  padding-bottom: 30px;
+  padding-bottom: 22px;
   margin: auto;
 }
 
@@ -2132,7 +2132,7 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding: 20px 28px 20px 20px;
+    padding: 31px 28px 20px 20px;
     font-size: 14px;
     color: #444444;
   }
@@ -2410,6 +2410,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .divider-wrapper-about .divider-img-pc {
+    padding-bottom: 19px;
+  }
+}
+
 @media (max-width: 320px) {
   .divider-img-sp {
     width: 92%;
@@ -2524,6 +2530,18 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .ftr-brand-name {
+    width: 321px;
+    height: 90px;
+    margin: auto;
+  }
+  .ftr-brand-name .ftr-brand-logo {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
   .post-ftr-bg {
     background: url(../media/images/top/post-bg-pc.png);
   }
@@ -2575,6 +2593,7 @@ body {
 @media (min-width: 1024px) {
   .ftr-terms-privacy {
     width: 22%;
+    margin-bottom: 25px;
   }
 }
 
@@ -2600,7 +2619,6 @@ body {
 
 @media (min-width: 1024px) {
   .ftr-social-links {
-    height: 200px;
     background-size: contain;
     background-repeat: repeat-x;
   }
@@ -2632,11 +2650,27 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .articles-wrapper .articles-list.flex-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    max-width: 590px;
+    margin: auto;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles-wrapper .articles-list.flex-start {
+    max-width: 870px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .articles-wrapper .articles-list.flex-start {
+    max-width: 1160px;
+    padding-left: 0;
   }
 }
 
@@ -3232,7 +3266,7 @@ body {
 
 @media (min-width: 768px) {
   .about-btn-wrapper {
-    margin-bottom: 120px;
+    margin-bottom: 110px;
   }
 }
 

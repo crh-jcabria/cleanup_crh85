@@ -80,7 +80,7 @@ header {
         display: block;
         position: initial;
         margin-top: 130px;
-        margin-bottom: 21px;
+        margin-bottom: 0;
     }
 
     .sp-search-bar-wrapper {
@@ -104,7 +104,7 @@ header {
 
             & li {
                 width: auto;
-                height: 100px;
+                height: 90px;
             }
         }
 
@@ -403,6 +403,14 @@ header {
             width: 100%;
             height: 100%;
         }
+
+        .ftr-brand-logo-pc {
+            display: block;
+        }
+
+        .ftr-brand-logo-sp {
+            display: none;
+        }
     }
 }
 
@@ -488,6 +496,10 @@ header {
 
 //category 
 .key-visual {
+    @include tablet {
+        height: 314px;
+    }
+
     .kv-icon {
         @include tablet {
             width: unset;
@@ -609,14 +621,6 @@ h1 + div {
             font-size: 26px;
             margin-top: 62px;
             padding: 46px 24px;
-        }
-    }
-
-    h3:not(.author-h3)  {
-        @include tablet {
-            background-image: url(/public/media/images/h3-bg.png);
-            background-repeat: round;
-            background-size: cover;
         }
     }
      
@@ -1147,6 +1151,13 @@ h1 + div {
     }
 }
 
+
+.key-visual-tag-movie {
+    @include tablet {
+        height: 314px;
+    }
+}
+
 .movie-lists-wrapper {
     @include mobile-l {
         margin: auto 40px;
@@ -1154,6 +1165,7 @@ h1 + div {
 
     .tag-lists-wrapper {
         @include tablet {
+            height: 163px;
             max-width: 540px;
             margin: 60px auto auto auto;
             padding: 36px 30px;

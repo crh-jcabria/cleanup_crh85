@@ -115,6 +115,7 @@ const categoryKV = {
 //default key visual
 keyVisual.style.background = categoryKV['post'].bg;
 keyVisual.style.backgroundSize = 'cover';
+keyVisual.style.backgroundPosition = 'bottom, top';
 kvIcon.src = categoryKV['post'].img;
 kvTitle.innerHTML = categoryKV['post'].title;
 kvDesc.innerHTML = categoryKV['post'].desc;
@@ -132,6 +133,7 @@ const handleKeyVisual = (e) => {
     
 	keyVisual.style.background = categoryKV[`${category}`].bg;
 	keyVisual.style.backgroundSize = 'cover';
+	keyVisual.style.backgroundPosition = 'bottom, top';
     kvIcon.src = categoryKV[`${category}`].img;
     kvTitle.innerHTML = categoryKV[`${category}`].title;
     kvDesc.innerHTML = categoryKV[`${category}`].desc;

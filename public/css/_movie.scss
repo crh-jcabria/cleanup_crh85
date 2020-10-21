@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(/public/media/images/movie-kv-bg.png) repeat;
+    background: url(/public/media/images/movie-kv-bg.png);
+    background-position: bottom, top;
     background-size: cover;
 
     .kv-icon {
@@ -35,10 +36,13 @@
 }
 
 .tag-lists-wrapper {
-    background: url(/public/media/images/tag-list-bg.png);
+    background-image: url(/public/media/images/tag-list-bg.png);
+    background-position: center bottom, center top;
+    background-size: contain;
     padding: 36px 20px;
     margin-top: 40px;
-    background-size: cover;
+    height: 171px;
+
 
     .tag-list {
         display: grid;

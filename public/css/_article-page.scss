@@ -54,6 +54,8 @@ h1 {
 
     h2:not(.transparent) {
         background: url(/public/media/images/h2-bg.png) round;
+        background-size: cover;
+        background-position: top, bottom;
         font-size: 24px;
         font-weight: normal;
         line-height: 1.5;
@@ -65,12 +67,12 @@ h1 {
         align-content: center;
         height: auto;
         padding: 36px 20px;
-        background-size: cover;
     }
 
     h3:not(.author-h3) {
-        background: url(/public/media/images/h3-bg-sp.png) round;
-        background-size: cover;
+        background: url(/public/media/images/h3-bg-top.png), url(/public/media/images/h3-bg-bottom.png);
+        background-position: top, bottom;
+        background-repeat: repeat-x;
     }
 
     h3 {

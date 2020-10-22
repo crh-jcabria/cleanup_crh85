@@ -584,6 +584,7 @@ header {
 .article-img {
     @include tablet {
         max-width: 100%;
+        margin: auto;
     }
 }
 
@@ -621,6 +622,7 @@ h1 + div {
     h2:not(.transparent) {
         @include tablet {
             width: 100%;
+            margin: 44px auto 7px auto;
         }
     
         @include pc {

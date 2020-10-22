@@ -1076,6 +1076,7 @@ header {
   margin-left: -20px;
   margin-right: -20px;
   width: calc(100% + 40px);
+  max-width: unset;
 }
 
 h1 {
@@ -2768,6 +2769,7 @@ body {
 @media (min-width: 768px) {
   .article-img {
     max-width: 100%;
+    margin: auto;
   }
 }
 
@@ -2797,6 +2799,7 @@ body {
 @media (min-width: 768px) {
   .articles-list-wrapper h2:not(.transparent) {
     width: 100%;
+    margin: 44px auto 7px auto;
   }
 }
 

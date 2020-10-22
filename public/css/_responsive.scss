@@ -497,7 +497,7 @@ header {
 //category 
 .key-visual {
     @include tablet {
-        height: 314px;
+        min-height: 314px;
     }
 
     .kv-icon {
@@ -582,8 +582,8 @@ header {
 }
 
 .article-img {
-    @include mobile-l {
-        width: 100%;
+    @include tablet {
+        max-width: 100%;
     }
 }
 
@@ -612,8 +612,14 @@ h1 + div {
         }
     }
     
+    // .h2-bg {
+    //     @include tablet {
+    //         width: 100%;
+    //     }
+    // }
+
     h2:not(.transparent) {
-        @include mobile-l {
+        @include tablet {
             width: 100%;
         }
     
@@ -1154,7 +1160,7 @@ h1 + div {
 
 .key-visual-tag-movie {
     @include tablet {
-        height: 314px;
+        min-height: 314px;
     }
 }
 

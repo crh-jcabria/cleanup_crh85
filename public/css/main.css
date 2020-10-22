@@ -800,8 +800,29 @@ header {
   left: 25%;
 }
 
+.key-visual-background::before {
+  content: '';
+  display: block;
+  background: url(/public/media/images/movie-kv-bg-t.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 100%;
+}
+
+.key-visual-background::after {
+  content: '';
+  display: block;
+  background: url(/public/media/images/movie-kv-bg-b.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 100%;
+}
+
 .key-visual-tag-movie {
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -817,8 +838,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background: url(/public/media/images/movie-kv-bg.png);
-  background-position: bottom, top;
-  background-size: cover;
 }
 
 .key-visual-tag-movie .kv-icon {
@@ -939,7 +958,8 @@ header {
 }
 
 .key-visual {
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,8 +974,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-size: cover;
-  background-position: bottom, top;
 }
 
 .key-visual .kv-icon {
@@ -1054,8 +1072,10 @@ header {
 }
 
 .article-img {
-  max-width: 100%;
   padding-bottom: 16px;
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
 }
 
 h1 {
@@ -1099,15 +1119,15 @@ h1 + div {
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.05em;
-  width: 100%;
-  margin-top: 44px;
-  margin-bottom: 7px;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
   height: auto;
   padding: 36px 20px;
+  margin: 44px -20px 7px -20px;
+  width: calc(100% + 40px);
+  overflow-wrap: anywhere;
 }
 
 .articles-list-wrapper h3:not(.author-h3) {
@@ -2643,7 +2663,7 @@ body {
 
 @media (min-width: 768px) {
   .key-visual {
-    height: 314px;
+    min-height: 314px;
   }
 }
 
@@ -2745,9 +2765,9 @@ body {
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 768px) {
   .article-img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -2774,7 +2794,7 @@ body {
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 768px) {
   .articles-list-wrapper h2:not(.transparent) {
     width: 100%;
   }
@@ -3329,7 +3349,7 @@ body {
 
 @media (min-width: 768px) {
   .key-visual-tag-movie {
-    height: 314px;
+    min-height: 314px;
   }
 }
 

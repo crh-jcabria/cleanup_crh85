@@ -1,12 +1,11 @@
 .key-visual {
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-position: bottom, top;
 
     .kv-icon {
         width: 100px;

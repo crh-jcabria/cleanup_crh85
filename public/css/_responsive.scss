@@ -612,12 +612,6 @@ h1 + div {
             }
         }
     }
-    
-    // .h2-bg {
-    //     @include tablet {
-    //         width: 100%;
-    //     }
-    // }
 
     h2:not(.transparent) {
         @include tablet {
@@ -895,7 +889,8 @@ h1 + div {
 
         @include tablet {
             margin-right: 21px;
-            height: 100px;
+            min-height: 100px;
+            height: auto;
             width: 150px;
         }
 
@@ -924,9 +919,8 @@ h1 + div {
 
 .product-wrapper-lg {
     @include tablet {
-        background: url(/public/media/images/product-bg-lg.png) no-repeat;
         flex-direction: row;
-        height: unset;
+        min-height: auto;
         align-items: flex-start;
     }
 

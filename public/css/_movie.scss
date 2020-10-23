@@ -4,7 +4,7 @@
         display: block;
         background: url(/public/media/images/movie-kv-bg-t.png);
         background-position: top;
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         height: 27px;
         width: 100%;
     }
@@ -14,9 +14,10 @@
         display: block;
         background: url(/public/media/images/movie-kv-bg-b.png);
         background-position: bottom;
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         height: 27px;
         width: 100%;
+        margin-top: -4px;
     }
 }
 

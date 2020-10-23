@@ -7,6 +7,7 @@
         background-repeat: repeat-x;
         height: 27px;
         width: 100%;
+        margin-bottom: -2px;
     }
 
     &::after {
@@ -17,7 +18,7 @@
         background-repeat: repeat-x;
         height: 27px;
         width: 100%;
-        margin-top: -4px;
+        margin-top: -2px;
     }
 }
 
@@ -58,13 +59,38 @@
 }
 
 .tag-lists-wrapper {
-    background-image: url(/public/media/images/tag-list-bg.png);
-    background-position: center bottom, center top;
-    background-size: contain;
+    background: #F5F5F5;
+    position: relative;
     padding: 36px 20px;
     margin-top: 40px;
-    height: 171px;
+    min-height: auto;
+    height: auto;
 
+    &::before {
+        content: '';
+        display: block;
+        background: url(/public/media/images/product-bg-t.png);
+        background-position: top;
+        background-repeat: repeat-x;
+        height: 17px;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background: url(/public/media/images/product-bg-b.png);
+        background-position: bottom;
+        background-repeat: repeat-x;
+        height: 17px;
+        width: 100%;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+    }
 
     .tag-list {
         display: grid;

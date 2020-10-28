@@ -1160,7 +1160,7 @@ h1 + div {
       align-content: center;
   height: auto;
   padding: 36px 20px;
-  margin: 44px -20px 7px -20px;
+  margin: 44px -20px 14px -20px;
   width: calc(100% + 40px);
   overflow-wrap: anywhere;
 }
@@ -1277,7 +1277,7 @@ h1 + div {
 .articles-list-wrapper ul:not(.custom-list) {
   font-size: 14px;
   letter-spacing: 0.05em;
-  margin: 8px 20px 2px;
+  margin: 25px 20px 2px;
   line-height: 1.75;
   list-style-image: url("/public/media/images/lp-bullet.png");
 }

@@ -51,6 +51,8 @@ header {
 .brand-name-logo .brand-logo {
   margin-right: 15px;
   width: 178px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .brand-name-logo .brand-name {
@@ -317,7 +319,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .see-details-wrapper img {
@@ -682,7 +684,6 @@ header {
 }
 
 .swiper-slide img:hover,
-.swiper-pagination-bullets:hover,
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   opacity: 0.5;
@@ -2083,6 +2084,11 @@ h1 + div {
   width: 100%;
 }
 
+.articles-list .article .article-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .key-visual-about {
   background: url(/public/media/images/about/about_titleBg_sp.png);
   width: 100%;
@@ -2295,6 +2301,8 @@ body {
 @media (min-width: 1024px) {
   header .brand-menu-wrapper .brand-logo {
     width: auto;
+    -o-object-fit: unset;
+       object-fit: unset;
   }
 }
 

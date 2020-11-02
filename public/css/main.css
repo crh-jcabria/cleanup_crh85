@@ -1176,6 +1176,7 @@ h1 + div {
   width: 100%;
   position: absolute;
   top: -16px;
+  left: 0;
 }
 
 .articles-list-wrapper h2:not(.transparent)::after {
@@ -1188,6 +1189,7 @@ h1 + div {
   width: 100%;
   position: absolute;
   bottom: -16px;
+  left: 0;
 }
 
 .articles-list-wrapper h3:not(.author-h3) {

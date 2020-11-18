@@ -50,7 +50,7 @@ $('#backToTop').click(function() {
 
 $('.tag-list-link').click(function() {
 	let getElem = $(this).attr('href');
-	let targetDistance = 100;
+	let targetDistance = 110;
 	if ($(getElem).length) {
 		let getOffset = $(getElem).offset().top;
 		$('html,body').animate({
@@ -62,7 +62,7 @@ $('.tag-list-link').click(function() {
 
 $('.ftr-terms').click(function() {
 	let getElem = $(this).attr('href');
-	let targetDistance = 100;
+	let targetDistance = 80;
 	if ($(getElem).length) {
 		let getOffset = $(getElem).offset().top;
 		$('html,body').animate({

@@ -235,7 +235,7 @@ header {
 }
 
 .sp-search-bar-wrapper .sp-search-bar-field {
-  background: #F5F5F5;
+  background: #f5f5f5 url(https://kitchen-trip.cleanup.jp/hubfs/kitchen_trip/icons/search.png) no-repeat right 14px center;
   padding: 16px;
   width: 100%;
   border: 1px solid transparent;
@@ -2265,9 +2265,21 @@ body {
   display: none;
 }
 
+:target {
+  padding-top: 140px;
+  margin-top: -140px;
+}
+
 @media (min-width: 1024px) {
   .menu {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  :target {
+    padding-top: unset;
+    margin-top: unset;
   }
 }
 
@@ -2331,7 +2343,7 @@ body {
 
 @media (min-width: 1024px) {
   header .pc-search-bar-wrapper .pc-search-bar-field {
-    background: #F5F5F5;
+    background: #f5f5f5 url(https://kitchen-trip.cleanup.jp/hubfs/kitchen_trip/icons/search.png) no-repeat right 14px center;
     padding: 16px;
     width: 100%;
     border: 1px solid transparent;

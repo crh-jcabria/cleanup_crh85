@@ -10,6 +10,9 @@ const kvTitle = document.querySelector('.kv-title');
 const kvDesc = document.querySelector('.kv-desc');
 const article = document.querySelectorAll('.article');
 const articlesWrapper = document.querySelector('.articles-list');
+const relatedArticlesWrapper = document.querySelector('.related-articles');
+const relatedArticle = document.querySelectorAll('.related-article');
+
 
 let showMenu = false;
 hamburgerText.innerHTML = 'Menu';
@@ -71,6 +74,14 @@ $('.ftr-terms').click(function() {
 	}
 	return false;
 });
+
+
+[relatedArticle].filter(eachRelated => {
+	if (eachRelated.length === 1) {
+		relatedArticlesWrapper.classList.add('col-1');
+	}
+});
+
 
 //keyvisual category object
 const categoryKV = {

@@ -66,7 +66,7 @@
 }
 
 .ftr-kitchentrip-logo {
-    margin: 30px;
+    margin: 30px 50px;
     text-align: center;
     font-family: $brand-font;
 }
@@ -85,6 +85,10 @@
         font-size: 34px;
         color: $brand-color;
     }
+}
+
+.ftr-brand-name img {
+    width: 100%;
 }
 
 .ftr-cleanup-logo {

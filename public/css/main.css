@@ -461,7 +461,7 @@ header {
 }
 
 .ftr-kitchentrip-logo {
-  margin: 30px;
+  margin: 30px 50px;
   text-align: center;
   font-family: "Courgette", Arial, Helvetica, sans-serif;
 }
@@ -483,6 +483,10 @@ header {
 .ftr-brand-name .ftr-brand-name {
   font-size: 34px;
   color: #B94049;
+}
+
+.ftr-brand-name img {
+  width: 100%;
 }
 
 .ftr-cleanup-logo {
@@ -2010,6 +2014,8 @@ h1 + div {
 .related-article-wrapper .related-article .article-img img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   vertical-align: bottom;
 }
 
@@ -2179,6 +2185,8 @@ h1 + div {
   text-align: center;
   font-size: 22px;
   line-height: 1.5;
+  padding-top: 140px;
+  margin-top: -140px;
 }
 
 .terms-details {
@@ -2317,6 +2325,7 @@ body {
     width: auto;
     -o-object-fit: unset;
        object-fit: unset;
+    max-height: 70px;
   }
 }
 
@@ -3368,6 +3377,12 @@ body {
     margin: auto 40px;
     padding-top: 20px;
     padding-bottom: 54px;
+  }
+  .related-article-wrapper .related-articles.col-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    max-width: 320px;
+    margin: auto;
   }
 }
 

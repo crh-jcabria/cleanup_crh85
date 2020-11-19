@@ -39,6 +39,7 @@ header {
             @include pc {
                 width: auto;
                 object-fit: unset;
+                max-height: 70px;
             }
         }
     }
@@ -1015,6 +1016,12 @@ h1 + div {
             margin: auto 40px;
             padding-top: 20px;
             padding-bottom: 54px;
+
+            &.col-1 {
+                grid-template-columns: auto;
+                max-width: 320px;
+                margin: auto;
+            }
         }
         
         @include pc {

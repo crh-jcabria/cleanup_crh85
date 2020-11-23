@@ -2097,6 +2097,12 @@ h1 + div {
   margin-right: auto;
 }
 
+span:target {
+  padding-top: 100px;
+  margin-top: -100px;
+  width: 100%;
+}
+
 .key-visual-about {
   background: url(/public/media/images/about/about_titleBg_sp.png);
   width: 100%;
@@ -2281,13 +2287,6 @@ body {
 @media (min-width: 1024px) {
   .menu {
     display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  :target {
-    padding-top: unset;
-    margin-top: unset;
   }
 }
 

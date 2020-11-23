@@ -5,13 +5,6 @@
      }
  }
 
- @media (max-width: 768px) {
-    :target {
-        padding-top: unset;
-        margin-top: unset;
-    }
- }
-
 header {
     @include pc {
         display: flex;
